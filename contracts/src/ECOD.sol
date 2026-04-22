@@ -19,7 +19,7 @@ contract ECOD is ERC20, AccessControl {
 
     // ============ Events ============
 
-    event TaxWalletsUpdated(address treasury, address liquidity, address dev);
+    event TaxWalletsUpdated(address indexed treasury, address indexed liquidity, address indexed dev);
     event TaxedPairSet(address indexed pair, bool taxed);
     event ExcludedFromTax(address indexed account, bool excluded);
     event TaxCollected(

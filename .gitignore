@@ -21,11 +21,16 @@ contracts/dependencies/
 contracts/out/
 contracts/cache/
 
-# Env — never commit
+# Env — never commit real secrets
 .env
 .env.local
 .env.*.local
 !.env.example
+# 1Password references file (no secrets — safe to commit)
+!.env.op
+# Foundry coverage output
+lcov.info
+coverage-html/
 
 # Logs
 *.log

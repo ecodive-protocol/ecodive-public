@@ -93,7 +93,7 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
         totalKgBurned += amount;
         _burn(msg.sender, amount);
 
-        certificateId = keccak256(abi.encodePacked(msg.sender, block.timestamp, amount, metadata));
+        certificateId = keccak256(abi.encodePacked(msg.sender, block.timestamp, amount, metadata, totalKgBurned));
         emit BurnCertificate(msg.sender, amount, certificateId, metadata);
     }
 }
