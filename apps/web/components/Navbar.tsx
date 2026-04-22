@@ -3,8 +3,13 @@
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useState, useRef, useEffect } from "react";
+
+const LOCALES = [
+  { code: "en", label: "EN", flag: "🇬🇧" },
+  { code: "pl", label: "PL", flag: "🇵🇱" },
+  { code: "es", label: "ES", flag: "🇪🇸" },
+] as const;
 
 export function Navbar() {
   const t = useTranslations("nav");
@@ -12,14 +17,27 @@ export function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
 
-  const otherLocale = locale === "en" ? "pl" : "en";
+  // Close lang dropdown on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
 
-  function switchLocale() {
-    // Replace /en/ or /pl/ prefix in pathname
-    const newPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  function switchLocale(code: string) {
+    const newPath = pathname.replace(`/${locale}`, `/${code}`);
     router.push(newPath);
+    setLangOpen(false);
   }
+
+  const currentLocale = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
 
   const links = [
     { href: "#tokenomics", label: t("tokenomics") },
@@ -68,14 +86,45 @@ export function Navbar() {
               </a>
             )
           )}
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={switchLocale}
-            className="border-cyan-400/25 text-cyan-300/70 hover:text-cyan-300 bg-transparent hover:bg-cyan-400/10"
-          >
-            {t("langSwitch")}
-          </Button>
+
+          {/* Language dropdown */}
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen((v) => !v)}
+              className="flex items-center gap-1.5 rounded-lg border border-cyan-400/25 px-3 py-1.5 text-sm font-semibold text-cyan-300/80 hover:text-cyan-300 hover:bg-cyan-400/10 transition-colors"
+            >
+              <span>{currentLocale.flag}</span>
+              <span>{currentLocale.label}</span>
+              <svg
+                className={`h-3 w-3 transition-transform ${langOpen ? "rotate-180" : ""}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {langOpen && (
+              <div
+                className="absolute right-0 mt-2 w-28 rounded-xl border border-sky-400/15 overflow-hidden shadow-xl"
+                style={{ background: "rgba(5, 18, 35, 0.97)" }}
+              >
+                {LOCALES.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => switchLocale(l.code)}
+                    className={`w-full flex items-center gap-2 px-4 py-2.5 text-sm font-medium transition-colors hover:bg-cyan-400/10 ${
+                      l.code === locale ? "text-cyan-300" : "text-sky-200/60 hover:text-cyan-300"
+                    }`}
+                  >
+                    <span>{l.flag}</span>
+                    <span>{l.label}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -123,14 +172,26 @@ export function Navbar() {
               </a>
             )
           )}
-          <button
-            onClick={() => { switchLocale(); setOpen(false); }}
-            className="text-left text-sm text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
-          >
-            {t("langSwitch")}
-          </button>
+          {/* Mobile lang switcher */}
+          <div className="flex gap-2 pt-1 border-t border-sky-400/10">
+            {LOCALES.map((l) => (
+              <button
+                key={l.code}
+                onClick={() => { switchLocale(l.code); setOpen(false); }}
+                className={`flex items-center gap-1 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors ${
+                  l.code === locale
+                    ? "bg-cyan-400/15 text-cyan-300"
+                    : "text-sky-200/50 hover:text-cyan-300 hover:bg-cyan-400/10"
+                }`}
+              >
+                <span>{l.flag}</span>
+                <span>{l.label}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </nav>
   );
 }
+

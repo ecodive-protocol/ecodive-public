@@ -35,7 +35,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!routing.locales.includes(locale as "en" | "pl")) notFound();
+  if (!routing.locales.includes(locale as "en" | "pl" | "es")) notFound();
 
   const messages = await getMessages();
 

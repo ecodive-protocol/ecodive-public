@@ -53,7 +53,7 @@ export function Hero() {
           {t("badge")}
         </Badge>
 
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight whitespace-pre-line">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight whitespace-pre-line text-balance">
           {t("title")}
         </h1>
 
