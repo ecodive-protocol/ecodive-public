@@ -33,11 +33,14 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
+    <nav
+      className="fixed top-0 inset-x-0 z-50 border-b border-sky-400/10"
+      style={{ background: "rgba(5, 15, 30, 0.75)", backdropFilter: "blur(12px)" }}
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight text-white">
+          <span className="text-xl font-extrabold tracking-tight text-white">
             🤿 EcoDive
           </span>
         </Link>
@@ -51,7 +54,7 @@ export function Navbar() {
                 href={l.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-white/70 hover:text-white transition-colors"
+                className="text-sm text-sky-200/60 hover:text-cyan-300 transition-colors font-medium"
               >
                 {l.label}
               </a>
@@ -59,7 +62,7 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-white/70 hover:text-white transition-colors"
+                className="text-sm text-sky-200/60 hover:text-cyan-300 transition-colors font-medium"
               >
                 {l.label}
               </a>
@@ -69,7 +72,7 @@ export function Navbar() {
             variant="outline"
             size="sm"
             onClick={switchLocale}
-            className="border-white/20 text-white/70 hover:text-white bg-transparent hover:bg-white/10"
+            className="border-cyan-400/25 text-cyan-300/70 hover:text-cyan-300 bg-transparent hover:bg-cyan-400/10"
           >
             {t("langSwitch")}
           </Button>
@@ -77,7 +80,7 @@ export function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white/70 hover:text-white"
+          className="md:hidden text-sky-200/60 hover:text-cyan-300"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -93,7 +96,10 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-white/10 bg-black/90 px-4 py-4 flex flex-col gap-4">
+        <div
+          className="md:hidden border-t border-sky-400/10 px-4 py-4 flex flex-col gap-4"
+          style={{ background: "rgba(5, 15, 30, 0.95)" }}
+        >
           {links.map((l) =>
             l.external ? (
               <a
@@ -101,7 +107,7 @@ export function Navbar() {
                 href={l.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-white/70 hover:text-white transition-colors"
+                className="text-sm text-sky-200/60 hover:text-cyan-300 transition-colors font-medium"
                 onClick={() => setOpen(false)}
               >
                 {l.label}
@@ -110,7 +116,7 @@ export function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-white/70 hover:text-white transition-colors"
+                className="text-sm text-sky-200/60 hover:text-cyan-300 transition-colors font-medium"
                 onClick={() => setOpen(false)}
               >
                 {l.label}
@@ -119,7 +125,7 @@ export function Navbar() {
           )}
           <button
             onClick={() => { switchLocale(); setOpen(false); }}
-            className="text-left text-sm text-emerald-400 hover:text-emerald-300 transition-colors"
+            className="text-left text-sm text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
           >
             {t("langSwitch")}
           </button>

@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen">
+      <div style={{ background: "#040c19" }} className="min-h-screen">
       <Navbar />
       <Hero />
       <Tokenomics />
