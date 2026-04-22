@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper",
+    "langSwitch": "HR"
+  },
+  "hero": {
+    "badge": "Clean-to-Earn protokol",
+    "title": "Pretvori plastiku oceana\nu digitalnu vrijednost",
+    "subtitle": "EcoDive nagrađuje ronioce i volontere čišćenja plaža ECOD tokenima. Svaki kilogram verificiranog plastika postaje PLASTIC RWA kredit na Base L2.",
+    "ctaPrimary": "Čitaj Whitepaper",
+    "ctaSecondary": "Pogledaj Ugovore",
+    "stat1Value": "x10",
+    "stat1Label": "Množitelj tehničkog ronjenja",
+    "stat2Value": "100M",
+    "stat2Label": "Maks. ponuda ECOD",
+    "stat3Value": "Base L2",
+    "stat3Label": "Minimalni troškovi gasa"
+  },
+  "tokenomics": {
+    "title": "Dual-Token Model",
+    "subtitle": "Dva tokena s različitim ulogama — upravljanje i kredit stvarnih sredstava.",
+    "ecod": {
+      "name": "ECOD",
+      "tagline": "Token za Upravljanje & Zajednicu",
+      "description": "ERC-20 s 3% DEX porezom (1% riznica, 1% likvidnost, 1% razvoj). Koristi se za Sub-DAO glasovanje, nagrade za staking i sponzorstvo događaja.",
+      "supply": "100.000.000 ECOD",
+      "supplyLabel": "Maks. ponuda",
+      "tax": "3%",
+      "taxLabel": "DEX porez",
+      "chain": "Base L2",
+      "chainLabel": "Mreža"
+    },
+    "plastic": {
+      "name": "PLASTIC",
+      "tagline": "Kredit Stvarnih Sredstava",
+      "description": "1 token = 1 kg verificiranog uklonjenog plastika. Kovan nakon AI + buddy-dive verifikacije. Spaljen s ESG certifikatom za korporativni offset.",
+      "ratio": "1 kg",
+      "ratioLabel": "Po tokenu",
+      "verify": "AI + GPS",
+      "verifyLabel": "Verifikacija",
+      "burn": "ESG Cert.",
+      "burnLabel": "Mehanizam spaljivanja"
+    },
+    "allocationTitle": "Raspodjela ECOD tokena",
+    "allocations": [
+      { "label": "Zajednica & Nagrade", "pct": 45, "color": "bg-emerald-500" },
+      { "label": "Riznica", "pct": 20, "color": "bg-teal-500" },
+      { "label": "Tim (vesting 18mj)", "pct": 15, "color": "bg-cyan-500" },
+      { "label": "Ekosustav & Grantovi", "pct": 12, "color": "bg-blue-500" },
+      { "label": "Likvidnost", "pct": 8, "color": "bg-indigo-500" }
+    ]
+  },
+  "roadmap": {
+    "title": "Plan razvoja",
+    "subtitle": "Izgradnja Clean-to-Earn ekosustava — korak po korak.",
+    "phases": [
+      {
+        "phase": "Faza 0",
+        "title": "Temelji",
+        "period": "Q2 2026",
+        "status": "active",
+        "items": [
+          "ECOD & PLASTIC pametni ugovori postavljeni na Base Sepolia",
+          "Ugovori Treasury, Signer, Vesting — 85 testova, 100% pokrivenost",
+          "Sigurnosna revizija (Slither, self-audit)",
+          "1Password upravljanje tajnama"
+        ]
+      },
+      {
+        "phase": "Faza 1",
+        "title": "dApp & Whitepaper",
+        "period": "Q3 2026",
+        "status": "active",
+        "items": [
+          "Javna odredišna stranica (ova stranica)",
+          "Claim dApp — poveži novčanik, pregledaj stanja",
+          "TypeScript SDK (@ecodive/sdk na npm)",
+          "Whitepaper PDF na IPFS"
+        ]
+      },
+      {
+        "phase": "Faza 2",
+        "title": "Backend & Mobilna app",
+        "period": "Q4 2026",
+        "status": "upcoming",
+        "items": [
+          "EcoScanner mobilna aplikacija (React Native + Expo)",
+          "AI pipeline verifikacije (YOLOv8 Edge + GPT-4o Vision)",
+          "Merkle publisher backend (Node.js + Fastify)",
+          "Proof of Dive API (Shearwater/Suunto/Garmin)"
+        ]
+      },
+      {
+        "phase": "Faza 3",
+        "title": "Mainnet & Sub-DAO",
+        "period": "Q1 2027",
+        "status": "upcoming",
+        "items": [
+          "Mainnet postavljanje na Base (vanjska revizija prvo)",
+          "Pokretanje Sub-DAO: Baltik, Mediteran, Jezera PL",
+          "B2B ESG nadzorna ploča za korporativne klijente",
+          "Token Generation Event (TGE)"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Često postavljana pitanja",
+    "items": [
+      {
+        "question": "Što je Clean-to-Earn?",
+        "answer": "Clean-to-Earn je naš temeljni model: sudionici koji uklanjaju plastiku iz oceana ili s plaža nagrađuju se ECOD tokenima. Roniocci zarađuju 5–10 puta više od volontera plaža zbog veće težine i učinka podvodnog čišćenja."
+      },
+      {
+        "question": "Kako se verificira čišćenje?",
+        "answer": "Svako čišćenje prolazi višeslojnu verifikaciju: GPS + vremenski žig, AI analiza fotografija (YOLOv8 + GPT-4o Vision) i dvostruki potpis Buddy-Dive (dva ronioca međusobno potvrđuju čišćenje). Time je manipulacija sustavom praktički nemoguća."
+      },
+      {
+        "question": "Što je PLASTIC token?",
+        "answer": "PLASTIC je token kredita stvarnih sredstava (RWA). 1 PLASTIC = 1 kg verificiranog uklonjenog plastika, zabilježeno na Base L2. Korporativni klijenti mogu kupiti i spaliti PLASTIC tokene kako bi primili ESG certifikat na lancu za kompenzaciju plastike."
+      },
+      {
+        "question": "Zašto Base L2?",
+        "answer": "Base (Coinbase L2) nudi gotovo nulte naknade za transakcije, EVM kompatibilnost i rastuću institucionalnu adopciju. To je najpraktičniji izbor za protokol zaštite okoliša s masovnim sudjelovanjem gdje se dnevno odvijaju tisuće malih transakcija nagrada."
+      },
+      {
+        "question": "Kada je mainnet lansiranje?",
+        "answer": "Trenutno smo na Base Sepolia testnetu (Faza 0). Mainnet lansiranje planirano je za Q1 2027 nakon vanjske sigurnosne revizije. Pretplatite se na naš newsletter kako biste primili obavijest."
+      },
+      {
+        "question": "Je li kod open-source?",
+        "answer": "Da. Pametni ugovori, dApp i TypeScript SDK u potpunosti su open-source na GitHubu pod MIT licencom. Backend AI pipeline i mobilna aplikacija ostaju privatni kako bi se zaštitilo naše vlasničko verifikacijsko IP."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Ostanite u tijeku",
+    "subtitle": "Primajte obavijesti o testnet događajima, datumu TGE i pokretanjima Sub-DAO.",
+    "placeholder": "vasa@email.hr",
+    "cta": "Obavijesti me",
+    "disclaimer": "Bez neželjene pošte. Odjava u bilo kada.",
+    "successTitle": "Uspješno ste prijavljeni!",
+    "successText": "Javit ćemo se kada bude važno."
+  },
+  "footer": {
+    "tagline": "Čišćenje oceana, jedan token po jedan.",
+    "contracts": "Ugovori",
+    "docs": "Docs",
+    "github": "GitHub",
+    "copyright": "© 2026 EcoDive. MIT licenca."
+  }
+}

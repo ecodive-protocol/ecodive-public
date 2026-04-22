@@ -3,12 +3,17 @@
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 const LOCALES = [
   { code: "en", label: "EN", flag: "🇬🇧" },
   { code: "pl", label: "PL", flag: "🇵🇱" },
   { code: "es", label: "ES", flag: "🇪🇸" },
+  { code: "de", label: "DE", flag: "🇩🇪" },
+  { code: "fr", label: "FR", flag: "🇫🇷" },
+  { code: "it", label: "IT", flag: "🇮🇹" },
+  { code: "hr", label: "HR", flag: "🇭🇷" },
 ] as const;
 
 export function Navbar() {
@@ -58,9 +63,8 @@ export function Navbar() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="text-xl font-extrabold tracking-tight text-white">
-            🤿 EcoDive
-          </span>
+          <Image src="/LogoMask.png" alt="EcoDive" width={32} height={32} className="object-contain rounded-full" />
+          <span className="text-xl font-extrabold tracking-tight text-white">EcoDive</span>
         </Link>
 
         {/* Desktop links */}

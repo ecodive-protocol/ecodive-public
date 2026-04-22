@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper",
+    "langSwitch": "FR"
+  },
+  "hero": {
+    "badge": "Protocole Clean-to-Earn",
+    "title": "Transformez le plastique\nen valeur numérique",
+    "subtitle": "EcoDive récompense les plongeurs et les nettoyeurs de plage avec des tokens ECOD. Chaque kilogramme de plastique vérifié devient un crédit RWA PLASTIC sur Base L2.",
+    "ctaPrimary": "Lire le Whitepaper",
+    "ctaSecondary": "Voir les Contrats",
+    "stat1Value": "x10",
+    "stat1Label": "Multiplicateur plongée technique",
+    "stat2Value": "100M",
+    "stat2Label": "Offre max. ECOD",
+    "stat3Value": "Base L2",
+    "stat3Label": "Frais quasi nuls"
+  },
+  "tokenomics": {
+    "title": "Modèle Dual-Token",
+    "subtitle": "Deux tokens aux rôles distincts — gouvernance et crédit d'actif réel.",
+    "ecod": {
+      "name": "ECOD",
+      "tagline": "Token de Gouvernance & Communauté",
+      "description": "ERC-20 avec 3% de taxe DEX (1% trésorerie, 1% liquidité, 1% dev). Utilisé pour les votes Sub-DAO, les récompenses de staking et le sponsoring d'événements.",
+      "supply": "100 000 000 ECOD",
+      "supplyLabel": "Offre max.",
+      "tax": "3%",
+      "taxLabel": "Taxe DEX",
+      "chain": "Base L2",
+      "chainLabel": "Réseau"
+    },
+    "plastic": {
+      "name": "PLASTIC",
+      "tagline": "Crédit d'Actif du Monde Réel",
+      "description": "1 token = 1 kg de plastique retiré vérifié. Frappé après vérification IA + buddy-dive. Brûlé avec certificat ESG pour la compensation d'entreprise.",
+      "ratio": "1 kg",
+      "ratioLabel": "Par Token",
+      "verify": "IA + GPS",
+      "verifyLabel": "Vérification",
+      "burn": "Cert. ESG",
+      "burnLabel": "Mécanisme de Burn"
+    },
+    "allocationTitle": "Allocation du Token ECOD",
+    "allocations": [
+      { "label": "Communauté & Récompenses", "pct": 45, "color": "bg-emerald-500" },
+      { "label": "Trésorerie", "pct": 20, "color": "bg-teal-500" },
+      { "label": "Équipe (vesting 18m)", "pct": 15, "color": "bg-cyan-500" },
+      { "label": "Écosystème & Grants", "pct": 12, "color": "bg-blue-500" },
+      { "label": "Liquidité", "pct": 8, "color": "bg-indigo-500" }
+    ]
+  },
+  "roadmap": {
+    "title": "Feuille de Route",
+    "subtitle": "Construire l'écosystème Clean-to-Earn — étape par étape.",
+    "phases": [
+      {
+        "phase": "Phase 0",
+        "title": "Fondation",
+        "period": "Q2 2026",
+        "status": "active",
+        "items": [
+          "Contrats intelligents ECOD & PLASTIC déployés sur Base Sepolia",
+          "Contrats Treasury, Signer, Vesting — 85 tests, couverture 100%",
+          "Audit de sécurité (Slither, auto-audit)",
+          "Workflow de gestion des secrets 1Password"
+        ]
+      },
+      {
+        "phase": "Phase 1",
+        "title": "dApp & Whitepaper",
+        "period": "Q3 2026",
+        "status": "active",
+        "items": [
+          "Page d'atterrissage publique (ce site)",
+          "dApp de claim — connecter le wallet, voir les soldes",
+          "SDK TypeScript (@ecodive/sdk sur npm)",
+          "Whitepaper PDF sur IPFS"
+        ]
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Backend & Mobile",
+        "period": "Q4 2026",
+        "status": "upcoming",
+        "items": [
+          "Application mobile EcoScanner (React Native + Expo)",
+          "Pipeline de vérification IA (YOLOv8 Edge + GPT-4o Vision)",
+          "Backend publisher Merkle (Node.js + Fastify)",
+          "API Proof of Dive (Shearwater/Suunto/Garmin)"
+        ]
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Mainnet & Sub-DAOs",
+        "period": "Q1 2027",
+        "status": "upcoming",
+        "items": [
+          "Déploiement mainnet sur Base (audit externe d'abord)",
+          "Lancement Sub-DAO : Baltique, Méditerranée, Lacs PL",
+          "Tableau de bord ESG B2B pour clients entreprises",
+          "Token Generation Event (TGE)"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "items": [
+      {
+        "question": "Qu'est-ce que le Clean-to-Earn ?",
+        "answer": "Clean-to-Earn est notre modèle central : les participants qui retirent du plastique de l'océan ou des plages sont récompensés avec des tokens ECOD. Les plongeurs gagnent 5 à 10 fois plus que les nettoyeurs de plage en raison de la plus grande difficulté et de l'impact du nettoyage sous-marin."
+      },
+      {
+        "question": "Comment le nettoyage est-il vérifié ?",
+        "answer": "Chaque nettoyage passe par une vérification multicouche : preuve GPS + horodatage, analyse photo par IA (YOLOv8 + GPT-4o Vision) et double signature Buddy-Dive (deux plongeurs confirment mutuellement leur nettoyage). Cela rend la manipulation du système pratiquement impossible."
+      },
+      {
+        "question": "Qu'est-ce que le token PLASTIC ?",
+        "answer": "PLASTIC est un token de crédit d'actif du monde réel (RWA). 1 PLASTIC = 1 kg de plastique retiré vérifié, enregistré sur Base L2. Les entreprises peuvent acheter et brûler des tokens PLASTIC pour recevoir un certificat ESG on-chain pour la compensation plastique."
+      },
+      {
+        "question": "Pourquoi Base L2 ?",
+        "answer": "Base (L2 de Coinbase) offre des frais de transaction quasi nuls, une compatibilité EVM et une adoption institutionnelle croissante. C'est le choix le plus pratique pour un protocole environnemental à participation massive où des milliers de petites transactions de récompense ont lieu quotidiennement."
+      },
+      {
+        "question": "Quand est le lancement sur mainnet ?",
+        "answer": "Nous sommes actuellement sur le testnet Base Sepolia (Phase 0). Le lancement sur mainnet est prévu pour Q1 2027 après un audit de sécurité externe. Rejoignez notre newsletter pour être informé."
+      },
+      {
+        "question": "Le code est-il open-source ?",
+        "answer": "Oui. Les contrats intelligents, la dApp et le SDK TypeScript sont entièrement open-source sur GitHub sous licence MIT. Le pipeline IA backend et l'application mobile restent privés pour protéger notre IP de vérification propriétaire."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Restez Informé",
+    "subtitle": "Recevez des notifications sur les événements testnet, la date TGE et les lancements Sub-DAO.",
+    "placeholder": "votre@email.fr",
+    "cta": "Me Notifier",
+    "disclaimer": "Pas de spam. Désinscription à tout moment.",
+    "successTitle": "Vous êtes inscrit !",
+    "successText": "Nous vous contacterons quand ce sera important."
+  },
+  "footer": {
+    "tagline": "Nettoyer les océans, un token à la fois.",
+    "contracts": "Contrats",
+    "docs": "Docs",
+    "github": "GitHub",
+    "copyright": "© 2026 EcoDive. Licence MIT."
+  }
+}

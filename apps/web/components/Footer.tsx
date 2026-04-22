@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -32,7 +33,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <span className="text-lg font-extrabold text-white">🤿 EcoDive</span>
+            <span className="flex items-center gap-2 text-lg font-extrabold text-white"><Image src="/LogoMask.png" alt="EcoDive" width={28} height={28} className="object-contain rounded-full" />EcoDive</span>
             <p className="text-sky-200/35 text-sm mt-1 font-medium">{t("tagline")}</p>
           </div>
 

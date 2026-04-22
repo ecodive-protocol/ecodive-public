@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper",
+    "langSwitch": "DE"
+  },
+  "hero": {
+    "badge": "Clean-to-Earn Protokoll",
+    "title": "Verwandle Ozeanplastik\nin digitalen Wert",
+    "subtitle": "EcoDive belohnt Taucher und Strandreiniger mit ECOD-Token. Jedes Kilogramm verifizierten Plastiks wird zu einem PLASTIC-RWA-Guthaben auf Base L2.",
+    "ctaPrimary": "Whitepaper lesen",
+    "ctaSecondary": "Verträge ansehen",
+    "stat1Value": "x10",
+    "stat1Label": "Multiplikator Tauchen",
+    "stat2Value": "100M",
+    "stat2Label": "ECOD Gesamtangebot",
+    "stat3Value": "Base L2",
+    "stat3Label": "Minimale Gasgebühren"
+  },
+  "tokenomics": {
+    "title": "Dual-Token-Modell",
+    "subtitle": "Zwei Token mit unterschiedlichen Rollen — Governance und Real-World-Asset-Kredit.",
+    "ecod": {
+      "name": "ECOD",
+      "tagline": "Governance & Community Token",
+      "description": "ERC-20 mit 3% DEX-Steuer (1% Treasury, 1% Liquidität, 1% Dev). Verwendet für Sub-DAO-Abstimmungen, Staking-Belohnungen und Event-Sponsoring.",
+      "supply": "100.000.000 ECOD",
+      "supplyLabel": "Max. Angebot",
+      "tax": "3%",
+      "taxLabel": "DEX-Steuer",
+      "chain": "Base L2",
+      "chainLabel": "Netzwerk"
+    },
+    "plastic": {
+      "name": "PLASTIC",
+      "tagline": "Real-World-Asset-Kredit",
+      "description": "1 Token = 1 kg verifiziertes entferntes Plastik. Geprägt nach KI + Buddy-Dive-Verifizierung. Verbrannt mit ESG-Zertifikat für Corporate Offsetting.",
+      "ratio": "1 kg",
+      "ratioLabel": "Pro Token",
+      "verify": "KI + GPS",
+      "verifyLabel": "Verifizierung",
+      "burn": "ESG-Zert.",
+      "burnLabel": "Burn-Mechanismus"
+    },
+    "allocationTitle": "ECOD Token-Verteilung",
+    "allocations": [
+      { "label": "Community & Belohnungen", "pct": 45, "color": "bg-emerald-500" },
+      { "label": "Treasury", "pct": 20, "color": "bg-teal-500" },
+      { "label": "Team (18m Vesting)", "pct": 15, "color": "bg-cyan-500" },
+      { "label": "Ökosystem & Grants", "pct": 12, "color": "bg-blue-500" },
+      { "label": "Liquidität", "pct": 8, "color": "bg-indigo-500" }
+    ]
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "subtitle": "Aufbau des Clean-to-Earn-Ökosystems — Schritt für Schritt.",
+    "phases": [
+      {
+        "phase": "Phase 0",
+        "title": "Fundament",
+        "period": "Q2 2026",
+        "status": "active",
+        "items": [
+          "ECOD & PLASTIC Smart Contracts auf Base Sepolia deployed",
+          "Treasury-, Signer-, Vesting-Verträge — 85 Tests, 100% Abdeckung",
+          "Sicherheitsaudit (Slither, Self-Audit)",
+          "1Password Secrets-Management-Workflow"
+        ]
+      },
+      {
+        "phase": "Phase 1",
+        "title": "dApp & Whitepaper",
+        "period": "Q3 2026",
+        "status": "active",
+        "items": [
+          "Öffentliche Landing Page (diese Seite)",
+          "Claim dApp — Wallet verbinden, Guthaben ansehen",
+          "TypeScript SDK (@ecodive/sdk auf npm)",
+          "Whitepaper PDF auf IPFS"
+        ]
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Backend & Mobile",
+        "period": "Q4 2026",
+        "status": "upcoming",
+        "items": [
+          "EcoScanner Mobile App (React Native + Expo)",
+          "KI-Verifikations-Pipeline (YOLOv8 Edge + GPT-4o Vision)",
+          "Merkle-Publisher-Backend (Node.js + Fastify)",
+          "Proof of Dive API (Shearwater/Suunto/Garmin)"
+        ]
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Mainnet & Sub-DAOs",
+        "period": "Q1 2027",
+        "status": "upcoming",
+        "items": [
+          "Mainnet-Deployment auf Base (externes Audit zuerst)",
+          "Sub-DAO-Start: Ostsee, Mittelmeer, Seen PL",
+          "B2B-ESG-Dashboard für Unternehmenskunden",
+          "Token Generation Event (TGE)"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was ist Clean-to-Earn?",
+        "answer": "Clean-to-Earn ist unser Kernmodell: Teilnehmer, die Plastik aus dem Ozean oder von Stränden entfernen, werden mit ECOD-Token belohnt. Taucher verdienen 5–10x mehr als Strandreiniger aufgrund der höheren Schwierigkeit und Wirkung der Unterwasserreinigung."
+      },
+      {
+        "question": "Wie wird die Reinigung verifiziert?",
+        "answer": "Jede Reinigung durchläuft eine mehrschichtige Verifizierung: GPS + Zeitstempel-Nachweis, KI-Fotoanalyse (YOLOv8 + GPT-4o Vision) und Buddy-Dive-Doppelsignatur (zwei Taucher bestätigen gegenseitig ihre Reinigung). Dies macht eine Manipulation des Systems praktisch unmöglich."
+      },
+      {
+        "question": "Was ist der PLASTIC-Token?",
+        "answer": "PLASTIC ist ein Real-World-Asset (RWA) Kredit-Token. 1 PLASTIC = 1 kg verifiziertes entferntes Plastik, auf Base L2 erfasst. Unternehmen können PLASTIC-Token kaufen und verbrennen, um ein On-Chain-ESG-Zertifikat für Plastik-Offsetting zu erhalten."
+      },
+      {
+        "question": "Warum Base L2?",
+        "answer": "Base (Coinbase L2) bietet nahezu null Transaktionsgebühren, EVM-Kompatibilität und wachsende institutionelle Akzeptanz. Es ist die praktischste Wahl für ein Massenpartizipations-Umweltprotokoll, bei dem täglich Tausende kleiner Belohnungstransaktionen stattfinden."
+      },
+      {
+        "question": "Wann ist der Mainnet-Launch?",
+        "answer": "Wir befinden uns derzeit auf dem Base Sepolia Testnet (Phase 0). Der Mainnet-Launch ist für Q1 2027 nach einem externen Sicherheitsaudit geplant. Abonniere unseren Newsletter, um benachrichtigt zu werden."
+      },
+      {
+        "question": "Ist der Code Open-Source?",
+        "answer": "Ja. Smart Contracts, die dApp und das TypeScript SDK sind vollständig Open-Source auf GitHub unter der MIT-Lizenz. Die Backend-KI-Pipeline und die Mobile App bleiben privat, um unser proprietäres Verifikations-IP zu schützen."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Bleib auf dem Laufenden",
+    "subtitle": "Erhalte Benachrichtigungen über Testnet-Events, TGE-Datum und Sub-DAO-Launches.",
+    "placeholder": "deine@email.de",
+    "cta": "Benachrichtigen",
+    "disclaimer": "Kein Spam. Jederzeit abmelden.",
+    "successTitle": "Du bist dabei!",
+    "successText": "Wir melden uns, wenn es wichtig wird."
+  },
+  "footer": {
+    "tagline": "Ozeane reinigen, ein Token nach dem anderen.",
+    "contracts": "Verträge",
+    "docs": "Docs",
+    "github": "GitHub",
+    "copyright": "© 2026 EcoDive. MIT-Lizenz."
+  }
+}
