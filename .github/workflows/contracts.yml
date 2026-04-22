@@ -19,13 +19,21 @@ jobs:
         working-directory: contracts
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: stable
+
+      - name: Configure git for forge
+        run: |
+          git config --global user.email "ci@ecodive.xyz"
+          git config --global user.name "EcoDive CI"
+
+      - name: Install dependencies
+        run: |
+          rm -f .gitmodules
+          forge install OpenZeppelin/openzeppelin-contracts@v5.1.0 foundry-rs/forge-std
 
       - name: Check formatting
         run: forge fmt --check
