@@ -63,7 +63,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
           <a
-            href="https://github.com/MariuszCzajka/ecodive-public/blob/main/docs/whitepaper.md"
+            href="https://github.com/ecodive-protocol/ecodive-public/blob/main/docs/whitepaper.md"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl font-semibold px-8 py-3.5 transition-all text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5"
@@ -72,7 +72,7 @@ export function Hero() {
             {t("ctaPrimary")}
           </a>
           <a
-            href="https://github.com/MariuszCzajka/ecodive-public/tree/main/contracts/src"
+            href="https://github.com/ecodive-protocol/ecodive-public/tree/main/contracts/src"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl border border-cyan-400/25 text-cyan-200 hover:bg-cyan-400/10 hover:-translate-y-0.5 bg-transparent px-8 py-3.5 transition-all text-sm font-medium"

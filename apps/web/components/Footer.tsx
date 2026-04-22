@@ -9,15 +9,15 @@ export function Footer() {
   const links = [
     {
       label: t("contracts"),
-      href: "https://github.com/MariuszCzajka/ecodive-public/tree/main/contracts/src",
+      href: "https://github.com/ecodive-protocol/ecodive-public/tree/main/contracts/src",
     },
     {
       label: t("docs"),
-      href: "https://github.com/MariuszCzajka/ecodive-public/tree/main/docs",
+      href: "https://github.com/ecodive-protocol/ecodive-public/tree/main/docs",
     },
     {
       label: t("github"),
-      href: "https://github.com/MariuszCzajka/ecodive-public",
+      href: "https://github.com/ecodive-protocol/ecodive-public",
     },
   ];
 

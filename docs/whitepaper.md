@@ -155,7 +155,7 @@ This split follows established Web3 practice: protocols open, products commercia
 
 ## 10. Contact & Contribution
 
-- Repository: [github.com/MariuszCzajka/ecodive-public](#)
+- Repository: [github.com/ecodive-protocol/ecodive-public](https://github.com/ecodive-protocol/ecodive-public)
 - Security disclosures: `security@ecodive.xyz`
 - Twitter / Farcaster: `@ecodive`
 

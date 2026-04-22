@@ -44,7 +44,7 @@ export function Navbar() {
     { href: "#roadmap", label: t("roadmap") },
     { href: "#faq", label: t("faq") },
     {
-      href: "https://github.com/MariuszCzajka/ecodive-public/blob/main/docs/whitepaper.md",
+      href: "https://github.com/ecodive-protocol/ecodive-public/blob/main/docs/whitepaper.md",
       label: t("whitepaper"),
       external: true,
     },
