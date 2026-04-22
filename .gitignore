@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+out/
+.next/
+.turbo/
+coverage/
+
+# Foundry
+cache/
+forge-cache/
+broadcast/
+lib/
+!lib/.gitkeep
+contracts/dependencies/
+contracts/out/
+contracts/cache/
+
+# Env — never commit
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Editor
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# OS
+Thumbs.db
