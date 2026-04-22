@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {Script, console} from "forge-std/Script.sol";
-import {ECOD} from "../src/ECOD.sol";
-import {PLASTIC} from "../src/PLASTIC.sol";
+import { Script, console } from "forge-std/Script.sol";
+import { ECOD } from "../src/ECOD.sol";
+import { PLASTIC } from "../src/PLASTIC.sol";
 
 /// @title DeployTestnet — Deploy ECOD + PLASTIC to Base Sepolia
 /// @notice For mainnet use a separate script with real multisig/timelock addresses.

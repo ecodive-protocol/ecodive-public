@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {ERC20Burnable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
+import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import { ERC20Burnable } from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import { AccessControl } from "@openzeppelin/contracts/access/AccessControl.sol";
 
 /// @title PLASTIC — Real-World-Asset credit token
 /// @notice Each PLASTIC token represents 1 kilogram of verified plastic removed from the environment.
@@ -30,7 +30,9 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
     /// @param amount Amount burned
     /// @param certificateId Unique certificate identifier (hash of burner + block.timestamp + amount)
     /// @param metadata Arbitrary metadata (e.g. company name, reporting period) — max 256 bytes
-    event BurnCertificate(address indexed burner, uint256 amount, bytes32 indexed certificateId, bytes metadata);
+    event BurnCertificate(
+        address indexed burner, uint256 amount, bytes32 indexed certificateId, bytes metadata
+    );
 
     // ============ Constants ============
 
@@ -61,7 +63,10 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
     /// @param to Recipient (Treasury contract or user)
     /// @param amount Amount in wei (1e18 = 1 kg)
     /// @param cleanupId Off-chain cleanup record identifier
-    function mintCleanup(address to, uint256 amount, bytes32 cleanupId) external onlyRole(MINTER_ROLE) {
+    function mintCleanup(address to, uint256 amount, bytes32 cleanupId)
+        external
+        onlyRole(MINTER_ROLE)
+    {
         if (to == address(0)) revert InvalidAddress();
         if (amount == 0) revert InvalidAmount();
 
@@ -78,7 +83,10 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
     /// @param amount Amount to burn (in wei)
     /// @param metadata Optional metadata (company name, reporting period), max 256 bytes
     /// @return certificateId Unique certificate identifier
-    function burnWithCertificate(uint256 amount, bytes calldata metadata) external returns (bytes32 certificateId) {
+    function burnWithCertificate(uint256 amount, bytes calldata metadata)
+        external
+        returns (bytes32 certificateId)
+    {
         if (amount == 0) revert InvalidAmount();
         if (metadata.length > MAX_METADATA_LENGTH) revert CertificateMetadataTooLong();
 

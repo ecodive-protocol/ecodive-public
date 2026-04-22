@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
+import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import { AccessControl } from "@openzeppelin/contracts/access/AccessControl.sol";
 
 /// @title ECOD — EcoDive Community & Governance Token
 /// @notice ERC-20 governance token with a 3% DEX transaction tax.
@@ -22,7 +22,9 @@ contract ECOD is ERC20, AccessControl {
     event TaxWalletsUpdated(address treasury, address liquidity, address dev);
     event TaxedPairSet(address indexed pair, bool taxed);
     event ExcludedFromTax(address indexed account, bool excluded);
-    event TaxCollected(address indexed from, uint256 treasuryAmount, uint256 liquidityAmount, uint256 devAmount);
+    event TaxCollected(
+        address indexed from, uint256 treasuryAmount, uint256 liquidityAmount, uint256 devAmount
+    );
 
     // ============ Constants ============
 
@@ -69,8 +71,9 @@ contract ECOD is ERC20, AccessControl {
         address dev
     ) ERC20("EcoDive", "ECOD") {
         if (
-            admin == address(0) || liquidity == address(0) || treasury == address(0) || presale == address(0)
-                || team == address(0) || marketing == address(0) || dev == address(0)
+            admin == address(0) || liquidity == address(0) || treasury == address(0)
+                || presale == address(0) || team == address(0) || marketing == address(0)
+                || dev == address(0)
         ) {
             revert InvalidWallet();
         }
@@ -103,8 +106,13 @@ contract ECOD is ERC20, AccessControl {
     // ============ Admin ============
 
     /// @notice Update tax destination wallets (admin only)
-    function setTaxWallets(address treasury, address liquidity, address dev) external onlyRole(ADMIN_ROLE) {
-        if (treasury == address(0) || liquidity == address(0) || dev == address(0)) revert InvalidWallet();
+    function setTaxWallets(address treasury, address liquidity, address dev)
+        external
+        onlyRole(ADMIN_ROLE)
+    {
+        if (treasury == address(0) || liquidity == address(0) || dev == address(0)) {
+            revert InvalidWallet();
+        }
         treasuryWallet = treasury;
         liquidityWallet = liquidity;
         devWallet = dev;
@@ -139,7 +147,8 @@ contract ECOD is ERC20, AccessControl {
             return;
         }
 
-        bool shouldTax = !isExcludedFromTax[from] && !isExcludedFromTax[to] && (isTaxedPair[from] || isTaxedPair[to]);
+        bool shouldTax = !isExcludedFromTax[from] && !isExcludedFromTax[to]
+            && (isTaxedPair[from] || isTaxedPair[to]);
 
         if (!shouldTax) {
             super._update(from, to, value);

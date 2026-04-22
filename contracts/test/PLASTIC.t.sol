@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {Test} from "forge-std/Test.sol";
-import {PLASTIC} from "../src/PLASTIC.sol";
-import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
+import { Test } from "forge-std/Test.sol";
+import { PLASTIC } from "../src/PLASTIC.sol";
+import { IAccessControl } from "@openzeppelin/contracts/access/IAccessControl.sol";
 
 contract PLASTICTest is Test {
     PLASTIC internal plastic;
@@ -54,7 +54,9 @@ contract PLASTICTest is Test {
     function test_RevertWhen_MintByNonMinter() public {
         bytes32 minterRole = plastic.MINTER_ROLE();
         vm.expectRevert(
-            abi.encodeWithSelector(IAccessControl.AccessControlUnauthorizedAccount.selector, corp, minterRole)
+            abi.encodeWithSelector(
+                IAccessControl.AccessControlUnauthorizedAccount.selector, corp, minterRole
+            )
         );
         vm.prank(corp);
         plastic.mintCleanup(treasury, 1e18, CLEANUP_ID);

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {Test} from "forge-std/Test.sol";
-import {ECOD} from "../src/ECOD.sol";
-import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
+import { Test } from "forge-std/Test.sol";
+import { ECOD } from "../src/ECOD.sol";
+import { IAccessControl } from "@openzeppelin/contracts/access/IAccessControl.sol";
 
 contract ECODTest is Test {
     ECOD internal ecod;
@@ -113,7 +113,9 @@ contract ECODTest is Test {
     function test_SetTaxedPair_OnlyAdmin() public {
         bytes32 adminRole = ecod.ADMIN_ROLE();
         vm.expectRevert(
-            abi.encodeWithSelector(IAccessControl.AccessControlUnauthorizedAccount.selector, alice, adminRole)
+            abi.encodeWithSelector(
+                IAccessControl.AccessControlUnauthorizedAccount.selector, alice, adminRole
+            )
         );
         vm.prank(alice);
         ecod.setTaxedPair(mockPair, true);
