@@ -3,6 +3,10 @@
 > **v1.0 — Public Release (Q2 2026)**
 > A Clean-to-Earn protocol for underwater cleanups, beach volunteering, and tokenized plastic credits.
 
+---
+
+> **Disclaimer:** Research phase only. No token sale. No public offering. No investment solicitation. Nothing herein constitutes financial advice.
+
 ## Abstract
 
 EcoDive & Shores is an open-source protocol that rewards individuals for physically removing plastic from the environment and converts verified cleanups into tradeable real-world-asset (RWA) credits purchased by corporations for ESG/CSRD compliance.
@@ -21,7 +25,7 @@ Eight million metric tons of plastic enter the world's oceans every year. Tradit
 1. **None reach underwater waste.** Recreational and technical divers who could remove ghost nets, sunken tires, and microplastic concentrations have no economic incentive.
 2. **No standardized plastic credit market.** While carbon credits reached billions in RWA TVL, plastic credits remain fragmented and centralized.
 
-Simultaneously, the EU Corporate Sustainability Reporting Directive (CSRD, phased 2025–2028) requires over 50,000 companies to report measurable environmental impact — creating a multi-billion-euro demand for auditable, verifiable, and on-chain ESG offsets.
+Simultaneously, the EU Corporate Sustainability Reporting Directive (CSRD, phased 2025–2028) requires over 50,000 companies to report measurable environmental impact — creating a multi-billion-euro demand for auditable, verifiable, on-chain ESG offsets.
 
 ## 2. Solution Overview
 
@@ -80,7 +84,7 @@ Reward multiplier reflects the true cost and risk of each cleanup type:
 On-device YOLOv8 classifies 18 trash categories. GPS, accelerometer, and signed timestamps produce a cryptographic *Proof of Location*.
 
 ### Layer 2 — Buddy-Dive
-Divers operate in pairs. Two verified accounts mutually sign each other's cleanup reports. Both receive rewards and accumulate a non-transferable *Trust Score* NFT. Sybil attacks require coordinated physical presence plus on-chain history for two accounts.
+Divers operate in pairs. Two verified accounts cross-sign each other's cleanup reports. Both receive rewards and accumulate a non-transferable *Trust Score* NFT. Sybil attacks require coordinated physical presence and on-chain history across two independent accounts.
 
 ### Layer 3 — Proof of Dive
 Optional integration with Shearwater Cloud, Suunto App, and Garmin Descent FIT files. Dive profile (timestamp, depth, decompression schedule) cryptographically anchors the cleanup. Bonus reward +30% ECOD for verified integration.
@@ -110,10 +114,10 @@ Holders of Legendary-tier photo NFTs and significant ECOD stakes vote on protoco
 
 ## 6. Anti-Sybil & Security
 
-- **Gitcoin Passport** required for reward claims above threshold amounts.
+- **Gitcoin Passport** is required for reward claims above threshold amounts.
 - **Merkle-based claim distribution** batches daily payouts into a single root, minimizing gas costs (~$0.02 per claim on Base).
 - **OpenZeppelin 5.x** standards inheritance, `ReentrancyGuard` on all external transfers, custom errors throughout for gas efficiency.
-- **Audit**: contracts will undergo third-party audit before mainnet launch.
+- **Audit**: contracts will undergo a third-party security audit before mainnet launch.
 
 ## 7. Technology Stack
 
