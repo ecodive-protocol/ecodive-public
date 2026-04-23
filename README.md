@@ -97,4 +97,6 @@ This aligns with standard Web3 practice (Uniswap, Hivemapper, Helium) — the pr
 
 ---
 
+> **Disclaimer:** This repository is in research phase. There is no token sale, no public offering, and no investment solicitation. Nothing here constitutes financial advice. Use at your own risk.
+
 **Built with 🌊 by an anonymous builder based in Poland. Follow [@ecodive](#) for field reports.**

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity 0.8.24;
 
 import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import { ERC20Burnable } from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
@@ -28,7 +28,7 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
     /// @notice Emitted when a corporation burns credits as an ESG offset
     /// @param burner Address performing the burn
     /// @param amount Amount burned
-    /// @param certificateId Unique certificate identifier (hash of burner + block.timestamp + amount)
+    /// @param certificateId Unique certificate identifier (hash of burner + nonce + amount)
     /// @param metadata Arbitrary metadata (e.g. company name, reporting period) — max 256 bytes
     event BurnCertificate(
         address indexed burner, uint256 amount, bytes32 indexed certificateId, bytes metadata
@@ -47,6 +47,9 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
 
     /// @notice Total kilograms ever burned as offsets (for transparency dashboards)
     uint256 public totalKgBurned;
+
+    /// @notice Monotonically increasing nonce for unique certificate IDs
+    uint256 private _burnNonce;
 
     // ============ Constructor ============
 
@@ -93,7 +96,7 @@ contract PLASTIC is ERC20, ERC20Burnable, AccessControl {
         totalKgBurned += amount;
         _burn(msg.sender, amount);
 
-        certificateId = keccak256(abi.encodePacked(msg.sender, block.timestamp, amount, metadata, totalKgBurned));
+        certificateId = keccak256(abi.encodePacked(msg.sender, ++_burnNonce, amount, metadata));
         emit BurnCertificate(msg.sender, amount, certificateId, metadata);
     }
 }

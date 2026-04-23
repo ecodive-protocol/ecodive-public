@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity 0.8.24;
 
 import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import { AccessControl } from "@openzeppelin/contracts/access/AccessControl.sol";
@@ -13,7 +13,6 @@ contract ECOD is ERC20, AccessControl {
     // ============ Errors ============
 
     error InvalidWallet();
-    error InvalidTaxBps();
     error AlreadyExcluded();
     error NotExcluded();
 
@@ -39,6 +38,13 @@ contract ECOD is ERC20, AccessControl {
     uint16 public constant DEV_TAX_BPS = 100; // 1%
     uint16 public constant TOTAL_TAX_BPS = TREASURY_TAX_BPS + LIQUIDITY_TAX_BPS + DEV_TAX_BPS;
     uint16 public constant BPS_DENOMINATOR = 10_000;
+
+    /// @dev Initial token allocations (summing to TOTAL_SUPPLY)
+    uint256 private constant LIQUIDITY_ALLOCATION = 40_000_000 * 1e18;
+    uint256 private constant TREASURY_ALLOCATION = 30_000_000 * 1e18;
+    uint256 private constant PRESALE_ALLOCATION = 15_000_000 * 1e18;
+    uint256 private constant TEAM_ALLOCATION = 10_000_000 * 1e18;
+    uint256 private constant MARKETING_ALLOCATION = 5_000_000 * 1e18;
 
     // ============ State ============
 
@@ -96,11 +102,11 @@ contract ECOD is ERC20, AccessControl {
         isExcludedFromTax[address(this)] = true;
 
         // Distribute initial supply (100M total)
-        _mint(liquidity, 40_000_000 * 1e18); // 40% DEX liquidity
-        _mint(treasury, 30_000_000 * 1e18); // 30% Clean-to-Earn treasury
-        _mint(presale, 15_000_000 * 1e18); // 15% presale
-        _mint(team, 10_000_000 * 1e18); // 10% team (vested externally)
-        _mint(marketing, 5_000_000 * 1e18); // 5% marketing & airdrops
+        _mint(liquidity, LIQUIDITY_ALLOCATION); // 40% DEX liquidity
+        _mint(treasury, TREASURY_ALLOCATION); // 30% Clean-to-Earn treasury
+        _mint(presale, PRESALE_ALLOCATION); // 15% presale
+        _mint(team, TEAM_ALLOCATION); // 10% team (vested externally)
+        _mint(marketing, MARKETING_ALLOCATION); // 5% marketing & airdrops
     }
 
     // ============ Admin ============
