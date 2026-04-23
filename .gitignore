@@ -17,6 +17,7 @@ forge-cache/
 broadcast/
 lib/
 !lib/.gitkeep
+!apps/web/lib/
 contracts/dependencies/
 contracts/out/
 contracts/cache/
