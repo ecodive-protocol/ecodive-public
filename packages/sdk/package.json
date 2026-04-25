@@ -1,0 +1,70 @@
+{
+  "name": "@ecodive/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the EcoDive Clean-to-Earn protocol (ECOD + PLASTIC tokens on Base).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./addresses": {
+      "types": "./dist/addresses.d.ts",
+      "import": "./dist/addresses.js"
+    },
+    "./abi": {
+      "types": "./dist/abi/index.d.ts",
+      "import": "./dist/abi/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm clean && pnpm build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "viem": "^2.48.0"
+  },
+  "keywords": [
+    "ecodive",
+    "ecod",
+    "plastic",
+    "rwa",
+    "clean-to-earn",
+    "viem",
+    "base",
+    "ethereum",
+    "blockchain",
+    "esg"
+  ],
+  "author": "EcoDive Builder <build@ecodive.xyz>",
+  "homepage": "https://ecodive.xyz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecodive-protocol/ecodive-public.git",
+    "directory": "packages/sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/ecodive-protocol/ecodive-public/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
