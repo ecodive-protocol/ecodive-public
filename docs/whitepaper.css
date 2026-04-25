@@ -1,0 +1,124 @@
+/* EcoDive Whitepaper — print stylesheet */
+
+:root {
+  --ink: #0b1e36;
+  --muted: #4b6079;
+  --accent: #0a7e8c;
+  --accent-soft: #e8f6f8;
+  --rule: #d6e0ea;
+}
+
+@page {
+  size: A4;
+  margin: 22mm 18mm 22mm 18mm;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  font-size: 10.5pt;
+  line-height: 1.55;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 26pt;
+  margin: 0 0 0.4em 0;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 16pt;
+  margin-top: 1.6em;
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 12.5pt;
+  margin-top: 1.2em;
+}
+
+p { margin: 0.55em 0; }
+
+a { color: var(--accent); text-decoration: none; }
+
+code, pre {
+  font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+  font-size: 9pt;
+}
+
+code {
+  background: var(--accent-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: #f4f7fb;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  page-break-inside: avoid;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.6em 1em;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  border-radius: 0 4px 4px 0;
+  page-break-inside: avoid;
+}
+
+blockquote p { margin: 0.2em 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.4em 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8em 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid var(--rule);
+  padding: 6px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.2em 0; }
+
+img {
+  max-width: 100%;
+  page-break-inside: avoid;
+}

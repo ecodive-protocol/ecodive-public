@@ -69,7 +69,8 @@ pnpm dev
 
 ## Documentation
 
-- [Whitepaper](docs/whitepaper.md)
+- [Whitepaper (Markdown)](docs/whitepaper.md) · [PDF](docs/whitepaper.pdf) · [Publishing to IPFS](docs/PUBLISHING_IPFS.md)
+- [TypeScript SDK (`@ecodive/sdk`)](packages/sdk/README.md)
 - [Tokenomics](docs/tokenomics.md)
 - [Architecture](docs/architecture.md)
 - [Contributing](CONTRIBUTING.md)

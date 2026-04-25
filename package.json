@@ -1,0 +1,19 @@
+{
+  "name": "ecodive-public-tooling",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Repo-level scripts (whitepaper PDF build, etc). Not published.",
+  "type": "module",
+  "scripts": {
+    "whitepaper:pdf": "node scripts/build-whitepaper-pdf.mjs"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["puppeteer"]
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
