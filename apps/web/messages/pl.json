@@ -151,5 +151,45 @@
     "docs": "Dokumenty",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. Licencja MIT."
+  },
+  "nav": {
+    "launchApp": "Uruchom aplikację"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Panel główny",
+    "dashboardSubtitle": "Połącz portfel, aby zobaczyć salda ECOD i PLASTIC. To podgląd testnetowy — brak realnej wartości, brak transakcji, brak sprzedaży tokenów.",
+    "statusTitle": "Status",
+    "statusContracts": "Kontrakty wdrożone:",
+    "statusClaim": "Claim flow — backend (Faza 2)",
+    "statusBurn": "Corporate burn — portal B2B",
+    "statusGovernance": "Governance — integracja Snapshot",
+    "statusMainnet": "Mainnet — po zewnętrznym audycie",
+    "comingNextTitle": "Wkrótce",
+    "balances": {
+      "title": "Salda tokenów",
+      "yourBalance": "twoje saldo",
+      "connectToView": "połącz, aby zobaczyć",
+      "disclaimer": "Dane tylko do odczytu z testnetu Base Sepolia. Żadne transakcje nie są wysyłane."
+    },
+    "connect": {
+      "switchNetwork": "Przełącz na Base Sepolia",
+      "switching": "Przełączanie…"
+    },
+    "comingSoon": {
+      "badge": "Wkrótce",
+      "claim": {
+        "title": "Odbierz nagrody",
+        "description": "Codzienne odbieranie ECOD z potwierdzonych sprzątań przez Merkle proof. Integracja z backendem w Fazie 2."
+      },
+      "burn": {
+        "title": "Corporate Burn",
+        "description": "Spal kredyty PLASTIC z certyfikatem ESG on-chain do raportowania CSRD. Tylko dla firm."
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Głosuj na propozycje Sub-DAO (Bałtyk, Morze Śródziemne, Jeziora PL). Na start — integracja Snapshot off-chain."
+      }
+    }
   }
 }

@@ -151,5 +151,45 @@
     "docs": "Docs",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. Licencia MIT."
+  },
+  "nav": {
+    "launchApp": "Lanzar App"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Panel de control",
+    "dashboardSubtitle": "Conecta tu wallet para ver tus saldos de ECOD y PLASTIC. Esta es una vista previa del testnet — sin valor real, sin transacciones, sin venta de tokens.",
+    "statusTitle": "Estado",
+    "statusContracts": "Contratos desplegados:",
+    "statusClaim": "Flujo de reclamación — backend (Fase 2)",
+    "statusBurn": "Quema corporativa — portal B2B",
+    "statusGovernance": "Gobernanza — integración Snapshot",
+    "statusMainnet": "Mainnet — tras auditoría externa",
+    "comingNextTitle": "Próximamente",
+    "balances": {
+      "title": "Saldos de tokens",
+      "yourBalance": "tu saldo",
+      "connectToView": "conectar para ver",
+      "disclaimer": "Datos de solo lectura del testnet Base Sepolia. No se envían transacciones."
+    },
+    "connect": {
+      "switchNetwork": "Cambiar a Base Sepolia",
+      "switching": "Cambiando…"
+    },
+    "comingSoon": {
+      "badge": "Pronto",
+      "claim": {
+        "title": "Reclamar recompensas",
+        "description": "Reclamación diaria de ECOD mediante Merkle-proof de limpiezas verificadas. Integración de backend en Fase 2."
+      },
+      "burn": {
+        "title": "Quema corporativa",
+        "description": "Quemar créditos PLASTIC con certificado ESG on-chain para informes CSRD. Solo B2B."
+      },
+      "governance": {
+        "title": "Gobernanza",
+        "description": "Vota en propuestas Sub-DAO (Báltico, Mediterráneo, Lagos PL). Primera integración off-chain con Snapshot."
+      }
+    }
   }
 }

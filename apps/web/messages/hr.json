@@ -151,5 +151,45 @@
     "docs": "Docs",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. MIT licenca."
+  },
+  "nav": {
+    "launchApp": "Pokreni aplikaciju"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Nadzorna ploča",
+    "dashboardSubtitle": "Povežite novčanik za prikaz stanja ECOD i PLASTIC. Ovo je testnet pregled — bez stvarne vrijednosti, bez transakcija, bez prodaje tokena.",
+    "statusTitle": "Status",
+    "statusContracts": "Ugovori postavljeni:",
+    "statusClaim": "Tok zahtjeva — backend (Faza 2)",
+    "statusBurn": "Korporativno spaljivanje — B2B portal",
+    "statusGovernance": "Upravljanje — integracija Snapshot",
+    "statusMainnet": "Mainnet — nakon vanjske revizije",
+    "comingNextTitle": "Uskoro",
+    "balances": {
+      "title": "Stanja tokena",
+      "yourBalance": "vaše stanje",
+      "connectToView": "povežite za prikaz",
+      "disclaimer": "Podaci samo za čitanje s Base Sepolia testneta. Ne šalju se transakcije."
+    },
+    "connect": {
+      "switchNetwork": "Prebaci na Base Sepolia",
+      "switching": "Prebacivanje…"
+    },
+    "comingSoon": {
+      "badge": "Uskoro",
+      "claim": {
+        "title": "Zahtijevaj nagrade",
+        "description": "Dnevni Merkle-proof zahtjev za ECOD zarađen od verificiranih čišćenja. Integracija s backendom u Fazi 2."
+      },
+      "burn": {
+        "title": "Korporativno spaljivanje",
+        "description": "Spali PLASTIC kredite s ESG certifikatom on-chain za CSRD izvještavanje. Samo za B2B."
+      },
+      "governance": {
+        "title": "Upravljanje",
+        "description": "Glasajte o prijedlozima Sub-DAO (Baltik, Mediteran, Jezera PL). Prvo off-chain integracija Snapshot."
+      }
+    }
   }
 }

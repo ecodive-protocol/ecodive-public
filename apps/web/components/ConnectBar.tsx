@@ -3,12 +3,14 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useChainId, useSwitchChain } from "wagmi";
 import { baseSepolia } from "wagmi/chains";
+import { useTranslations } from "next-intl";
 
 export function ConnectBar() {
   const { isConnected } = useAccount();
   const chainId = useChainId();
   const { switchChain, isPending } = useSwitchChain();
   const wrongNetwork = isConnected && chainId !== baseSepolia.id;
+  const t = useTranslations("dapp.connect");
 
   return (
     <div className="flex flex-col items-end gap-2">
@@ -24,7 +26,7 @@ export function ConnectBar() {
           disabled={isPending}
           className="rounded-md border border-amber-400/40 bg-amber-400/10 px-3 py-1 text-xs text-amber-300 hover:bg-amber-400/20 disabled:opacity-60"
         >
-          {isPending ? "Switching…" : "Switch to Base Sepolia"}
+          {isPending ? t("switching") : t("switchNetwork")}
         </button>
       )}
     </div>

@@ -151,5 +151,45 @@
     "docs": "Docs",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. MIT-Lizenz."
+  },
+  "nav": {
+    "launchApp": "App starten"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Dashboard",
+    "dashboardSubtitle": "Verbinde deine Wallet, um deine ECOD- und PLASTIC-Guthaben zu sehen. Dies ist eine Testnet-Vorschau — kein echter Wert, keine Transaktionen, kein Token-Verkauf.",
+    "statusTitle": "Status",
+    "statusContracts": "Verträge bereitgestellt:",
+    "statusClaim": "Claim-Flow — Backend (Phase 2)",
+    "statusBurn": "Corporate Burn — B2B-Portal",
+    "statusGovernance": "Governance — Snapshot-Integration",
+    "statusMainnet": "Mainnet — nach externem Audit",
+    "comingNextTitle": "Demnächst",
+    "balances": {
+      "title": "Token-Guthaben",
+      "yourBalance": "dein Guthaben",
+      "connectToView": "verbinden zum Anzeigen",
+      "disclaimer": "Nur lesende Daten vom Base Sepolia Testnet. Es werden keine Transaktionen gesendet."
+    },
+    "connect": {
+      "switchNetwork": "Zu Base Sepolia wechseln",
+      "switching": "Wechseln…"
+    },
+    "comingSoon": {
+      "badge": "Bald",
+      "claim": {
+        "title": "Belohnungen abholen",
+        "description": "Täglicher Merkle-Proof-Claim von ECOD aus verifizierten Cleanups. Backend-Integration in Phase 2."
+      },
+      "burn": {
+        "title": "Corporate Burn",
+        "description": "PLASTIC-Credits mit On-Chain-ESG-Zertifikat für CSRD-Reporting verbrennen. Nur B2B."
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Abstimmen über Sub-DAO-Vorschläge (Ostsee, Mittelmeer, Seen PL). Zunächst Off-Chain-Snapshot-Integration."
+      }
+    }
   }
 }

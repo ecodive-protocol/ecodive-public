@@ -151,5 +151,45 @@
     "docs": "Docs",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. Licenza MIT."
+  },
+  "nav": {
+    "launchApp": "Avvia App"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Pannello di controllo",
+    "dashboardSubtitle": "Connetti il tuo wallet per vedere i saldi ECOD e PLASTIC. Questa è un’anteprima testnet — nessun valore reale, nessuna transazione, nessuna vendita di token.",
+    "statusTitle": "Stato",
+    "statusContracts": "Contratti distribuiti:",
+    "statusClaim": "Flusso di riscatto — backend (Fase 2)",
+    "statusBurn": "Burn aziendale — portale B2B",
+    "statusGovernance": "Governance — integrazione Snapshot",
+    "statusMainnet": "Mainnet — dopo audit esterno",
+    "comingNextTitle": "In arrivo",
+    "balances": {
+      "title": "Saldi token",
+      "yourBalance": "il tuo saldo",
+      "connectToView": "connetti per vedere",
+      "disclaimer": "Dati in sola lettura dal testnet Base Sepolia. Nessuna transazione viene inviata."
+    },
+    "connect": {
+      "switchNetwork": "Passa a Base Sepolia",
+      "switching": "Cambio in corso…"
+    },
+    "comingSoon": {
+      "badge": "Presto",
+      "claim": {
+        "title": "Riscuoti premi",
+        "description": "Riscossione giornaliera di ECOD tramite Merkle-proof per i cleanup verificati. Integrazione backend in Fase 2."
+      },
+      "burn": {
+        "title": "Burn aziendale",
+        "description": "Brucia crediti PLASTIC con certificato ESG on-chain per la rendicontazione CSRD. Solo B2B."
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Vota le proposte Sub-DAO (Baltico, Mediterraneo, Laghi PL). Prima integrazione off-chain con Snapshot."
+      }
+    }
   }
 }

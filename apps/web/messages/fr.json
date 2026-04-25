@@ -151,5 +151,45 @@
     "docs": "Docs",
     "github": "GitHub",
     "copyright": "© 2026 EcoDive. Licence MIT."
+  },
+  "nav": {
+    "launchApp": "Lancer l’App"
+  },
+  "dapp": {
+    "testnetBadge": "Testnet · Base Sepolia",
+    "dashboardTitle": "Tableau de bord",
+    "dashboardSubtitle": "Connectez votre portefeuille pour voir vos soldes ECOD et PLASTIC. Ceci est un aperçu testnet — sans valeur réelle, sans transactions, sans vente de tokens.",
+    "statusTitle": "Statut",
+    "statusContracts": "Contrats déployés :",
+    "statusClaim": "Flux de réclamation — backend (Phase 2)",
+    "statusBurn": "Burn d’entreprise — portail B2B",
+    "statusGovernance": "Gouvernance — intégration Snapshot",
+    "statusMainnet": "Mainnet — après audit externe",
+    "comingNextTitle": "Bientôt",
+    "balances": {
+      "title": "Soldes de tokens",
+      "yourBalance": "votre solde",
+      "connectToView": "connecter pour voir",
+      "disclaimer": "Données en lecture seule depuis le testnet Base Sepolia. Aucune transaction n’est envoyée."
+    },
+    "connect": {
+      "switchNetwork": "Passer à Base Sepolia",
+      "switching": "Changement…"
+    },
+    "comingSoon": {
+      "badge": "Bientôt",
+      "claim": {
+        "title": "Réclamer des récompenses",
+        "description": "Réclamation quotidienne d’ECOD par Merkle-proof pour les nettoyages vérifiés. Intégration backend en Phase 2."
+      },
+      "burn": {
+        "title": "Burn d’entreprise",
+        "description": "Brûler des crédits PLASTIC avec certificat ESG on-chain pour le reporting CSRD. Réservé aux entreprises."
+      },
+      "governance": {
+        "title": "Gouvernance",
+        "description": "Votez sur les propositions Sub-DAO (Baltique, Méditerranée, Lacs PL). Intégration Snapshot off-chain en premier."
+      }
+    }
   }
 }
