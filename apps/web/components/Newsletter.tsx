@@ -7,17 +7,34 @@ export function Newsletter() {
   const t = useTranslations("newsletter");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // Basic email validation — no backend yet, just UI state
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("Please enter a valid email address.");
       return;
     }
     setError("");
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError((data as { error?: string }).error ?? "Something went wrong. Please try again.");
+        return;
+      }
+      setSubmitted(true);
+    } catch {
+      setError("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -53,10 +70,11 @@ export function Newsletter() {
               />
               <button
                 type="submit"
-                className="rounded-xl font-semibold px-6 py-3 shrink-0 transition-all hover:-translate-y-0.5 text-sm"
+                disabled={loading}
+                className="rounded-xl font-semibold px-6 py-3 shrink-0 transition-all hover:-translate-y-0.5 text-sm disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0"
                 style={{ background: "linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)", color: "#fff" }}
               >
-                {t("cta")}
+                {loading ? "…" : t("cta")}
               </button>
             </form>
 
