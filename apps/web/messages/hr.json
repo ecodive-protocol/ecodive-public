@@ -11,6 +11,7 @@
     "title": "Pretvori plastiku oceana\nu digitalnu vrijednost",
     "subtitle": "EcoDive nagrađuje ronioce i volontere čišćenja plaža ECOD tokenima. Svaki kilogram verificiranog plastika postaje PLASTIC RWA kredit na Base L2.",
     "ctaPrimary": "Čitaj Whitepaper",
+    "ctaPdf": "Preuzmi PDF",
     "ctaSecondary": "Pogledaj Ugovore",
     "stat1Value": "x10",
     "stat1Label": "Množitelj tehničkog ronjenja",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. MIT licenca."
   },
   "nav": {
-    "launchApp": "Pokreni aplikaciju"
+    "launchApp": "Pokreni aplikaciju",
+    "tokenomics": "Tokenomika",
+    "roadmap": "Plan razvoja",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",

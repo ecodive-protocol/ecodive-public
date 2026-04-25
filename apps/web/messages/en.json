@@ -11,6 +11,7 @@
     "title": "Turn Ocean Plastic\nInto Digital Value",
     "subtitle": "EcoDive rewards divers and beach cleaners with ECOD tokens. Every kilogram of verified plastic becomes a PLASTIC RWA credit on Base L2.",
     "ctaPrimary": "Read Whitepaper",
+    "ctaPdf": "Download PDF",
     "ctaSecondary": "View Contracts",
     "stat1Value": "x10",
     "stat1Label": "Multiplier for tech dives",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. MIT License."
   },
   "nav": {
-    "launchApp": "Launch App"
+    "launchApp": "Launch App",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",

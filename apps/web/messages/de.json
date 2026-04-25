@@ -11,6 +11,7 @@
     "title": "Verwandle Ozeanplastik\nin digitalen Wert",
     "subtitle": "EcoDive belohnt Taucher und Strandreiniger mit ECOD-Token. Jedes Kilogramm verifizierten Plastiks wird zu einem PLASTIC-RWA-Guthaben auf Base L2.",
     "ctaPrimary": "Whitepaper lesen",
+    "ctaPdf": "PDF herunterladen",
     "ctaSecondary": "Verträge ansehen",
     "stat1Value": "x10",
     "stat1Label": "Multiplikator Tauchen",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. MIT-Lizenz."
   },
   "nav": {
-    "launchApp": "App starten"
+    "launchApp": "App starten",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",

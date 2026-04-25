@@ -11,6 +11,7 @@
     "title": "Trasforma la plastica\nin valore digitale",
     "subtitle": "EcoDive premia i sub e i volontari delle spiagge con token ECOD. Ogni chilogrammo di plastica verificata diventa un credito RWA PLASTIC su Base L2.",
     "ctaPrimary": "Leggi il Whitepaper",
+    "ctaPdf": "Scarica PDF",
     "ctaSecondary": "Vedi i Contratti",
     "stat1Value": "x10",
     "stat1Label": "Moltiplicatore immersioni",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. Licenza MIT."
   },
   "nav": {
-    "launchApp": "Avvia App"
+    "launchApp": "Avvia App",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",

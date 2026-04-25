@@ -11,6 +11,7 @@
     "title": "Zamień plastik oceanu\nw cyfrową wartość",
     "subtitle": "EcoDive nagradza nurków i wolontariuszy plaż tokenami ECOD. Każdy kilogram zweryfikowanego plastiku staje się kredytem RWA PLASTIC na Base L2.",
     "ctaPrimary": "Czytaj Whitepaper",
+    "ctaPdf": "Pobierz PDF",
     "ctaSecondary": "Zobacz Kontrakty",
     "stat1Value": "x10",
     "stat1Label": "Mnożnik za nurkowanie tech",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. Licencja MIT."
   },
   "nav": {
-    "launchApp": "Uruchom aplikację"
+    "launchApp": "Uruchom aplikację",
+    "tokenomics": "Tokenomika",
+    "roadmap": "Mapa drogowa",
+    "faq": "FAQ",
+    "whitepaper": "Whitepaper"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",

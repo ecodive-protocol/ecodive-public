@@ -11,6 +11,7 @@
     "title": "Transformez le plastique\nen valeur numérique",
     "subtitle": "EcoDive récompense les plongeurs et les nettoyeurs de plage avec des tokens ECOD. Chaque kilogramme de plastique vérifié devient un crédit RWA PLASTIC sur Base L2.",
     "ctaPrimary": "Lire le Whitepaper",
+    "ctaPdf": "Télécharger PDF",
     "ctaSecondary": "Voir les Contrats",
     "stat1Value": "x10",
     "stat1Label": "Multiplicateur plongée technique",
@@ -153,7 +154,11 @@
     "copyright": "© 2026 EcoDive. Licence MIT."
   },
   "nav": {
-    "launchApp": "Lancer l’App"
+    "launchApp": "Lancer l'App",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Feuille de route",
+    "faq": "FAQ",
+    "whitepaper": "Livre blanc"
   },
   "dapp": {
     "testnetBadge": "Testnet · Base Sepolia",
