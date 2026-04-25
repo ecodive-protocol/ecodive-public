@@ -129,6 +129,13 @@ export function Navbar() {
               </div>
             )}
           </div>
+
+          <Link
+            href={`/${locale}/app`}
+            className="rounded-lg bg-cyan-400 px-3.5 py-1.5 text-sm font-semibold text-[#040c19] hover:bg-cyan-300 transition-colors"
+          >
+            Launch App
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -176,6 +183,13 @@ export function Navbar() {
               </a>
             )
           )}
+          <Link
+            href={`/${locale}/app`}
+            onClick={() => setOpen(false)}
+            className="rounded-lg bg-cyan-400 px-3.5 py-2 text-center text-sm font-semibold text-[#040c19] hover:bg-cyan-300 transition-colors"
+          >
+            Launch App
+          </Link>
           {/* Mobile lang switcher */}
           <div className="flex gap-2 pt-1 border-t border-sky-400/10">
             {LOCALES.map((l) => (
