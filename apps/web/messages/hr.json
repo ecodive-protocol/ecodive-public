@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Kredit Stvarnih Sredstava",
-      "description": "1 token = 1 kg verificiranog uklonjenog plastika. Kovan nakon AI + buddy-dive verifikacije. Spaljen s ESG certifikatom za korporativni offset.",
+      "description": "1 token = 1 kg verificirane uklonjene plastike. B2B-only kredit koji se spaljuje za auditabilni certifikat učinka.",
       "ratio": "1 kg",
       "ratioLabel": "Po tokenu",
       "verify": "AI + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "EcoScanner mobilna aplikacija (React Native + Expo)",
-          "AI pipeline verifikacije (YOLOv8 Edge + GPT-4o Vision)",
+          "AI pipeline verifikacije (edge vision + multimodalna provjera)",
           "Merkle publisher backend (Node.js + Fastify)",
           "Proof of Dive API (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Mainnet postavljanje na Base (vanjska revizija prvo)",
           "Pokretanje Sub-DAO: Baltik, Mediteran, Jezera PL",
           "B2B ESG nadzorna ploča za korporativne klijente",
-          "Token Generation Event (TGE)"
+          "Pravna, audit i mainnet spremnost"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "Što je Clean-to-Earn?",
-        "answer": "Clean-to-Earn je naš temeljni model: sudionici koji uklanjaju plastiku iz oceana ili s plaža nagrađuju se ECOD tokenima. Roniocci zarađuju 5–10 puta više od volontera plaža zbog veće težine i učinka podvodnog čišćenja."
+        "answer": "Clean-to-Earn je naš temeljni model: ljudi koji uklanjaju plastiku s plaža, rijeka ili podvodnih lokacija dobivaju nagrade za verificirani rad. Mainstream korisnici počinju s EcoPoints; self-custody korisnici kasnije mogu koristiti on-chain sloj."
       },
       {
         "question": "Kako se verificira čišćenje?",
-        "answer": "Svako čišćenje prolazi višeslojnu verifikaciju: GPS + vremenski žig, AI analiza fotografija (YOLOv8 + GPT-4o Vision) i dvostruki potpis Buddy-Dive (dva ronioca međusobno potvrđuju čišćenje). Time je manipulacija sustavom praktički nemoguća."
+        "answer": "Svako čišćenje prolazi slojevitu verifikaciju: GPS i vrijeme, pregled fotografija, computer vision na uređaju, ponašajni limiti i Buddy-Dive za podvodni rad. Cilj je snažan audit trail bez osobnih podataka on-chain."
       },
       {
         "question": "Što je PLASTIC token?",
-        "answer": "PLASTIC je token kredita stvarnih sredstava (RWA). 1 PLASTIC = 1 kg verificiranog uklonjenog plastika, zabilježeno na Base L2. Korporativni klijenti mogu kupiti i spaliti PLASTIC tokene kako bi primili ESG certifikat na lancu za kompenzaciju plastike."
+        "answer": "PLASTIC je B2B-only kredit oporabe plastike. 1 PLASTIC = 1 kg verificirane uklonjene plastike, zabilježeno na Base L2. Korporativni partneri mogu spaliti PLASTIC za auditabilni certifikat učinka; nije namijenjen retailu."
       },
       {
         "question": "Zašto Base L2?",
-        "answer": "Base (Coinbase L2) nudi gotovo nulte naknade za transakcije, EVM kompatibilnost i rastuću institucionalnu adopciju. To je najpraktičniji izbor za protokol zaštite okoliša s masovnim sudjelovanjem gdje se dnevno odvijaju tisuće malih transakcija nagrada."
+        "answer": "Base nudi niske troškove transakcija, EVM kompatibilnost, snažan tooling, podršku za smart wallete i široku developer adopciju. To je praktičan dokazni sloj za mnoge male okolišne događaje i nagrade."
       },
       {
         "question": "Kada je mainnet lansiranje?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Ostanite u tijeku",
-    "subtitle": "Primajte obavijesti o testnet događajima, datumu TGE i pokretanjima Sub-DAO.",
+    "subtitle": "Primajte novosti o testnetu, EcoScanner beti, partnerskim pilotima i terenskim izvještajima.",
     "placeholder": "vasa@email.hr",
     "cta": "Obavijesti me",
     "disclaimer": "Bez neželjene pošte. Odjava u bilo kada.",

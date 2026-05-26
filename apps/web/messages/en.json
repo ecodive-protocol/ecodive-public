@@ -7,26 +7,26 @@
     "langSwitch": "PL"
   },
   "hero": {
-    "badge": "Clean-to-Earn Protocol",
-    "title": "Turn Ocean Plastic\nInto Digital Value",
-    "subtitle": "EcoDive rewards divers and beach cleaners with ECOD tokens. Every kilogram of verified plastic becomes a PLASTIC RWA credit on Base L2.",
+    "badge": "Verified Clean-to-Earn",
+    "title": "Clean Coastlines\nEarn Real Rewards",
+    "subtitle": "EcoDive helps divers, beach cleaners, and local partners turn verified cleanup work into EcoPoints, community rewards, and auditable plastic recovery data.",
     "ctaPrimary": "Read Whitepaper",
     "ctaPdf": "Download PDF",
     "ctaSecondary": "View Contracts",
     "stat1Value": "x10",
-    "stat1Label": "Multiplier for tech dives",
+    "stat1Label": "For hard cleanup missions",
     "stat2Value": "100M",
     "stat2Label": "ECOD max supply",
     "stat3Value": "Base L2",
-    "stat3Label": "Near-zero gas fees"
+    "stat3Label": "Low-cost proof layer"
   },
   "tokenomics": {
     "title": "Dual-Token Model",
-    "subtitle": "Two tokens with distinct roles — governance and real-world asset credit.",
+    "subtitle": "A mainstream reward layer with an optional on-chain protocol core.",
     "ecod": {
       "name": "ECOD",
       "tagline": "Governance & Community Token",
-      "description": "ERC-20 with 3% DEX tax (1% treasury, 1% liquidity, 1% dev). Used for Sub-DAO voting, staking rewards, and event sponsorship.",
+      "description": "ERC-20 with 3% DEX tax (1% treasury, 1% liquidity, 1% dev). Designed for self-custody users, Sub-DAO voting, event sponsorship, and future protocol participation.",
       "supply": "100,000,000 ECOD",
       "supplyLabel": "Max Supply",
       "tax": "3%",
@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Real-World Asset Credit",
-      "description": "1 token = 1 kg of verified removed plastic. Minted after AI + buddy-dive verification. Burned with ESG certificate for corporate offsetting.",
+      "description": "1 token = 1 kg of verified removed plastic. B2B-only recovery credit burned for auditable impact certificates after verification.",
       "ratio": "1 kg",
       "ratioLabel": "Per Token",
       "verify": "AI + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "EcoScanner mobile app (React Native + Expo)",
-          "AI verification pipeline (YOLOv8 Edge + GPT-4o Vision)",
+          "AI verification pipeline (edge vision + multimodal review)",
           "Merkle root publisher backend (Node.js + Fastify)",
           "Proof of Dive API (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Mainnet deployment on Base (external audit first)",
           "Sub-DAO launch: Baltic, Mediterranean, Lakes PL",
           "B2B ESG dashboard for corporate clients",
-          "Token Generation Event (TGE)"
+          "Legal, audit, and mainnet readiness"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "What is Clean-to-Earn?",
-        "answer": "Clean-to-Earn is our core model: participants who remove plastic from the ocean or beaches are rewarded with ECOD tokens. Divers earn 5–10x more than beach cleaners due to the higher difficulty and impact of underwater cleanup."
+        "answer": "Clean-to-Earn is our core model: participants who remove plastic from beaches, rivers, or underwater sites earn rewards for verified work. Mainstream users start with EcoPoints; self-custody users can later use the on-chain protocol."
       },
       {
         "question": "How is cleanup verified?",
-        "answer": "Every cleanup goes through multi-layer verification: GPS + timestamp proof, AI photo analysis (YOLOv8 + GPT-4o Vision), and Buddy-Dive dual-signature (two divers confirm each other's cleanup). This makes gaming the system practically impossible."
+        "answer": "Every cleanup goes through layered verification: GPS and timestamp checks, photo review, edge computer vision, behavioral limits, and Buddy-Dive dual-signature for underwater work. The goal is a strong audit trail without exposing personal data on-chain."
       },
       {
         "question": "What is the PLASTIC token?",
-        "answer": "PLASTIC is a Real-World Asset (RWA) credit token. 1 PLASTIC = 1 kg of verified removed plastic, recorded on Base L2. Corporate clients can purchase and burn PLASTIC tokens to receive an on-chain ESG certificate for carbon/plastic offsetting."
+        "answer": "PLASTIC is a B2B-only plastic recovery credit. 1 PLASTIC = 1 kg of verified removed plastic, recorded on Base L2. Corporate partners can burn PLASTIC for an auditable impact certificate; it is not intended for retail distribution."
       },
       {
         "question": "Why Base L2?",
-        "answer": "Base (Coinbase L2) offers near-zero transaction fees, EVM compatibility, and growing institutional adoption. It's the most practical choice for a mass-participation environmental protocol where thousands of small reward transactions happen daily."
+        "answer": "Base offers low-cost transactions, EVM compatibility, strong tooling, smart-wallet support, and broad developer adoption. It is a practical proof layer for many small environmental reward and verification events."
       },
       {
         "question": "When is mainnet launch?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Stay in the Loop",
-    "subtitle": "Get notified about testnet events, TGE date, and Sub-DAO launches.",
+    "subtitle": "Get notified about testnet updates, EcoScanner beta, partner pilots, and public field reports.",
     "placeholder": "your@email.com",
     "cta": "Notify Me",
     "disclaimer": "No spam. Unsubscribe anytime.",
@@ -147,7 +147,7 @@
     "successText": "We'll reach out when it matters."
   },
   "footer": {
-    "tagline": "Cleaning oceans, one token at a time.",
+    "tagline": "Verified cleanups, real-world rewards.",
     "contracts": "Contracts",
     "docs": "Docs",
     "github": "GitHub",
@@ -189,7 +189,7 @@
       },
       "burn": {
         "title": "Corporate Burn",
-        "description": "Burn PLASTIC credits with on-chain ESG certificate for CSRD reporting. B2B-only."
+        "description": "Burn PLASTIC credits with an auditable impact certificate. B2B-only."
       },
       "governance": {
         "title": "Governance",

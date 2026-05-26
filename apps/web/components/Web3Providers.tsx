@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import Image from "next/image";
 import { WagmiProvider } from "wagmi";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RainbowKitProvider, darkTheme, type AvatarComponent } from "@rainbow-me/rainbowkit";
@@ -15,12 +16,13 @@ import { wagmiConfig } from "@/lib/wagmi";
 const EcoDiveAvatar: AvatarComponent = ({ address, ensImage, size }) => {
   if (ensImage) {
     return (
-      <img
+      <Image
         src={ensImage}
         width={size}
         height={size}
         style={{ borderRadius: "50%", objectFit: "cover" }}
         alt="ENS avatar"
+        unoptimized
       />
     );
   }

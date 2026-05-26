@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Credito di Asset del Mondo Reale",
-      "description": "1 token = 1 kg di plastica rimossa verificata. Coniato dopo verifica IA + buddy-dive. Bruciato con certificato ESG per l'offsetting aziendale.",
+      "description": "1 token = 1 kg di plastica rimossa verificata. Credito B2B-only bruciato per generare un certificato di impatto auditabile.",
       "ratio": "1 kg",
       "ratioLabel": "Per Token",
       "verify": "IA + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "App mobile EcoScanner (React Native + Expo)",
-          "Pipeline di verifica IA (YOLOv8 Edge + GPT-4o Vision)",
+          "Pipeline di verifica IA (edge vision + revisione multimodale)",
           "Backend publisher Merkle (Node.js + Fastify)",
           "API Proof of Dive (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Deploy mainnet su Base (audit esterno prima)",
           "Lancio Sub-DAO: Baltico, Mediterraneo, Laghi PL",
           "Dashboard ESG B2B per clienti aziendali",
-          "Token Generation Event (TGE)"
+          "Preparazione legale, audit e mainnet"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "Cos'è il Clean-to-Earn?",
-        "answer": "Clean-to-Earn è il nostro modello principale: i partecipanti che rimuovono plastica dall'oceano o dalle spiagge vengono premiati con token ECOD. I sub guadagnano 5–10x in più rispetto ai volontari delle spiagge grazie alla maggiore difficoltà e all'impatto della pulizia subacquea."
+        "answer": "Clean-to-Earn è il nostro modello principale: chi rimuove plastica da spiagge, fiumi o siti subacquei riceve ricompense per lavoro verificato. Gli utenti mainstream iniziano con EcoPoints; gli utenti self-custody possono usare in seguito il layer on-chain."
       },
       {
         "question": "Come viene verificata la pulizia?",
-        "answer": "Ogni pulizia passa attraverso una verifica multistrato: prova GPS + timestamp, analisi fotografica con IA (YOLOv8 + GPT-4o Vision) e doppia firma Buddy-Dive (due sub si confermano a vicenda). Questo rende praticamente impossibile manipolare il sistema."
+        "answer": "Ogni pulizia passa attraverso una verifica a livelli: GPS e timestamp, revisione foto, computer vision sul dispositivo, limiti comportamentali e Buddy-Dive per il lavoro subacqueo. L'obiettivo è un audit trail forte senza dati personali on-chain."
       },
       {
         "question": "Cos'è il token PLASTIC?",
-        "answer": "PLASTIC è un token di credito Real-World Asset (RWA). 1 PLASTIC = 1 kg di plastica rimossa verificata, registrata su Base L2. Le aziende possono acquistare e bruciare token PLASTIC per ricevere un certificato ESG on-chain per l'offsetting della plastica."
+        "answer": "PLASTIC è un credito B2B-only di recupero plastica. 1 PLASTIC = 1 kg di plastica rimossa verificata, registrata su Base L2. I partner aziendali possono bruciare PLASTIC per ottenere un certificato di impatto auditabile; non è destinato al retail."
       },
       {
         "question": "Perché Base L2?",
-        "answer": "Base (L2 di Coinbase) offre commissioni di transazione quasi nulle, compatibilità EVM e crescente adozione istituzionale. È la scelta più pratica per un protocollo ambientale a partecipazione di massa dove migliaia di piccole transazioni di ricompensa avvengono quotidianamente."
+        "answer": "Base offre transazioni a basso costo, compatibilità EVM, tooling solido, supporto smart wallet e ampia adozione developer. È un layer di prova pratico per molti piccoli eventi ambientali e ricompense."
       },
       {
         "question": "Quando è il lancio su mainnet?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Rimani Aggiornato",
-    "subtitle": "Ricevi notifiche su eventi testnet, data TGE e lanci Sub-DAO.",
+    "subtitle": "Ricevi aggiornamenti su testnet, beta EcoScanner, piloti partner e field report.",
     "placeholder": "tua@email.it",
     "cta": "Notificami",
     "disclaimer": "Niente spam. Cancellazione in qualsiasi momento.",

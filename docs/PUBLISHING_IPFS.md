@@ -70,7 +70,7 @@ The CID is content-addressed — anyone uploading the same bytes will get the sa
 
 ## Long-term archival (Arweave)
 
-For permanent storage (one-time fee, no ongoing pinning) we will mirror the final v1.0 PDF to **Arweave** before TGE. This is a P2 task — IPFS via Pinata is sufficient for the testnet phase.
+For permanent storage (one-time fee, no ongoing pinning) we will mirror the final public PDF to **Arweave** before mainnet or a major public release. This is a P2 task — IPFS via Pinata is sufficient for the testnet phase.
 
 ```bash
 # Future:

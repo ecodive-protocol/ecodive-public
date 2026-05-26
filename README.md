@@ -1,6 +1,6 @@
 # EcoDive & Shores
 
-> **Clean-to-Earn protocol** bridging underwater cleanups, beach volunteering, and the real-world-asset (RWA) plastic credits market.
+> **Clean-to-Earn protocol** bridging verified underwater cleanups, beach volunteering, reward points, and auditable plastic recovery credits.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?logo=solidity)](https://soliditylang.org/)
@@ -8,19 +8,20 @@
 
 ## What is EcoDive?
 
-EcoDive is an open-source protocol that rewards people for physically removing plastic from the environment — with special focus on underwater cleanups that traditional crowdsourcing cannot reach.
+EcoDive is an open-source protocol that rewards people for physically removing plastic from the environment, with special focus on underwater cleanups that traditional crowdsourcing cannot reach.
 
-The protocol uses a **dual-token model**:
+The protocol uses a staged reward-and-proof model:
 
-- **ECOD** — governance/community token (ERC-20)
-- **PLASTIC** — RWA credit token (1 token = 1 kg of verified, removed plastic), purchased and burned by corporations for ESG/CSRD compliance
+- **EcoPoints** — off-chain loyalty points for mainstream users and partner rewards
+- **ECOD** — governance/community token (ERC-20) for self-custody users and future Sub-DAO participation
+- **PLASTIC** — B2B-only recovery credit (1 token = 1 kg of verified removed plastic), burned for auditable impact certificates
 
 ## Features
 
 - **Buddy-Dive verification** — cryptographic dual-signature between paired divers
 - **Proof of Dive** — integration with Shearwater, Suunto, and Garmin dive computers
 - **C2PA provenance** — tamper-proof photo verification
-- **YOLOv8 Edge AI** — on-device trash classification (18 categories)
+- **Edge computer vision** — on-device trash classification, benchmarked per mobile target
 - **Merkle-based claims** — gas-efficient rewards on Base L2
 - **Sub-DAOs** — geographically decentralized governance (Baltic, Mediterranean, Lakes PL)
 - **Difficulty multiplier** — x1 beach / x5 recreational diving / x10 ghost nets
@@ -100,4 +101,4 @@ This aligns with standard Web3 practice (Uniswap, Hivemapper, Helium) — the pr
 
 > **Disclaimer:** This repository is in research phase. There is no token sale, no public offering, and no investment solicitation. Nothing here constitutes financial advice. Use at your own risk.
 
-**Built with 🌊 by an anonymous builder based in Poland. Follow [@ecodive](#) for field reports.**
+**Built by an anonymous builder based in Poland. Follow [@ecodive](#) for field reports.**

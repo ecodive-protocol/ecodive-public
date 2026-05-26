@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Real-World-Asset-Kredit",
-      "description": "1 Token = 1 kg verifiziertes entferntes Plastik. Geprägt nach KI + Buddy-Dive-Verifizierung. Verbrannt mit ESG-Zertifikat für Corporate Offsetting.",
+      "description": "1 Token = 1 kg verifiziertes entferntes Plastik. B2B-only Recovery Credit, der für ein auditierbares Impact-Zertifikat verbrannt wird.",
       "ratio": "1 kg",
       "ratioLabel": "Pro Token",
       "verify": "KI + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "EcoScanner Mobile App (React Native + Expo)",
-          "KI-Verifikations-Pipeline (YOLOv8 Edge + GPT-4o Vision)",
+          "KI-Verifikations-Pipeline (Edge Vision + multimodale Prüfung)",
           "Merkle-Publisher-Backend (Node.js + Fastify)",
           "Proof of Dive API (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Mainnet-Deployment auf Base (externes Audit zuerst)",
           "Sub-DAO-Start: Ostsee, Mittelmeer, Seen PL",
           "B2B-ESG-Dashboard für Unternehmenskunden",
-          "Token Generation Event (TGE)"
+          "Legal-, Audit- und Mainnet-Readiness"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "Was ist Clean-to-Earn?",
-        "answer": "Clean-to-Earn ist unser Kernmodell: Teilnehmer, die Plastik aus dem Ozean oder von Stränden entfernen, werden mit ECOD-Token belohnt. Taucher verdienen 5–10x mehr als Strandreiniger aufgrund der höheren Schwierigkeit und Wirkung der Unterwasserreinigung."
+        "answer": "Clean-to-Earn ist unser Kernmodell: Menschen, die Plastik an Stränden, Flüssen oder Unterwasserstandorten entfernen, erhalten Belohnungen für verifizierte Arbeit. Mainstream-Nutzer starten mit EcoPoints; Self-Custody-Nutzer können später die On-Chain-Schicht verwenden."
       },
       {
         "question": "Wie wird die Reinigung verifiziert?",
-        "answer": "Jede Reinigung durchläuft eine mehrschichtige Verifizierung: GPS + Zeitstempel-Nachweis, KI-Fotoanalyse (YOLOv8 + GPT-4o Vision) und Buddy-Dive-Doppelsignatur (zwei Taucher bestätigen gegenseitig ihre Reinigung). Dies macht eine Manipulation des Systems praktisch unmöglich."
+        "answer": "Jede Reinigung durchläuft eine gestaffelte Verifizierung: GPS und Zeit, Fotoprüfung, Edge Computer Vision, Verhaltenslimits und Buddy-Dive für Unterwasserarbeit. Ziel ist ein starker Audit Trail ohne personenbezogene Daten on-chain."
       },
       {
         "question": "Was ist der PLASTIC-Token?",
-        "answer": "PLASTIC ist ein Real-World-Asset (RWA) Kredit-Token. 1 PLASTIC = 1 kg verifiziertes entferntes Plastik, auf Base L2 erfasst. Unternehmen können PLASTIC-Token kaufen und verbrennen, um ein On-Chain-ESG-Zertifikat für Plastik-Offsetting zu erhalten."
+        "answer": "PLASTIC ist ein B2B-only Plastic-Recovery-Credit. 1 PLASTIC = 1 kg verifiziertes entferntes Plastik, auf Base L2 erfasst. Unternehmenspartner können PLASTIC für ein auditierbares Impact-Zertifikat verbrennen; es ist nicht für Retail bestimmt."
       },
       {
         "question": "Warum Base L2?",
-        "answer": "Base (Coinbase L2) bietet nahezu null Transaktionsgebühren, EVM-Kompatibilität und wachsende institutionelle Akzeptanz. Es ist die praktischste Wahl für ein Massenpartizipations-Umweltprotokoll, bei dem täglich Tausende kleiner Belohnungstransaktionen stattfinden."
+        "answer": "Base bietet niedrige Transaktionskosten, EVM-Kompatibilität, starkes Tooling, Smart-Wallet-Support und breite Entwickleradoption. Es ist eine praktische Proof-Schicht für viele kleine Umwelt- und Reward-Events."
       },
       {
         "question": "Wann ist der Mainnet-Launch?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Bleib auf dem Laufenden",
-    "subtitle": "Erhalte Benachrichtigungen über Testnet-Events, TGE-Datum und Sub-DAO-Launches.",
+    "subtitle": "Erhalte Updates zu Testnet, EcoScanner Beta, Partnerpiloten und Field Reports.",
     "placeholder": "deine@email.de",
     "cta": "Benachrichtigen",
     "disclaimer": "Kein Spam. Jederzeit abmelden.",

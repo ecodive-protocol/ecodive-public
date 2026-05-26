@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Crédit d'Actif du Monde Réel",
-      "description": "1 token = 1 kg de plastique retiré vérifié. Frappé après vérification IA + buddy-dive. Brûlé avec certificat ESG pour la compensation d'entreprise.",
+      "description": "1 token = 1 kg de plastique retiré vérifié. Crédit B2B-only brûlé pour générer un certificat d'impact auditable.",
       "ratio": "1 kg",
       "ratioLabel": "Par Token",
       "verify": "IA + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "Application mobile EcoScanner (React Native + Expo)",
-          "Pipeline de vérification IA (YOLOv8 Edge + GPT-4o Vision)",
+          "Pipeline de vérification IA (vision edge + revue multimodale)",
           "Backend publisher Merkle (Node.js + Fastify)",
           "API Proof of Dive (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Déploiement mainnet sur Base (audit externe d'abord)",
           "Lancement Sub-DAO : Baltique, Méditerranée, Lacs PL",
           "Tableau de bord ESG B2B pour clients entreprises",
-          "Token Generation Event (TGE)"
+          "Préparation juridique, audit et mainnet"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "Qu'est-ce que le Clean-to-Earn ?",
-        "answer": "Clean-to-Earn est notre modèle central : les participants qui retirent du plastique de l'océan ou des plages sont récompensés avec des tokens ECOD. Les plongeurs gagnent 5 à 10 fois plus que les nettoyeurs de plage en raison de la plus grande difficulté et de l'impact du nettoyage sous-marin."
+        "answer": "Clean-to-Earn est notre modèle central : les personnes qui retirent du plastique des plages, rivières ou sites sous-marins reçoivent des récompenses pour un travail vérifié. Les utilisateurs grand public commencent avec EcoPoints; les utilisateurs self-custody peuvent ensuite utiliser la couche on-chain."
       },
       {
         "question": "Comment le nettoyage est-il vérifié ?",
-        "answer": "Chaque nettoyage passe par une vérification multicouche : preuve GPS + horodatage, analyse photo par IA (YOLOv8 + GPT-4o Vision) et double signature Buddy-Dive (deux plongeurs confirment mutuellement leur nettoyage). Cela rend la manipulation du système pratiquement impossible."
+        "answer": "Chaque nettoyage passe par une vérification en couches : GPS et heure, revue photo, computer vision sur appareil, limites comportementales et Buddy-Dive pour le travail sous-marin. L'objectif est un audit trail solide sans données personnelles on-chain."
       },
       {
         "question": "Qu'est-ce que le token PLASTIC ?",
-        "answer": "PLASTIC est un token de crédit d'actif du monde réel (RWA). 1 PLASTIC = 1 kg de plastique retiré vérifié, enregistré sur Base L2. Les entreprises peuvent acheter et brûler des tokens PLASTIC pour recevoir un certificat ESG on-chain pour la compensation plastique."
+        "answer": "PLASTIC est un crédit B2B-only de récupération plastique. 1 PLASTIC = 1 kg de plastique retiré vérifié, enregistré sur Base L2. Les partenaires entreprises peuvent brûler PLASTIC pour obtenir un certificat d'impact auditable; il n'est pas destiné au retail."
       },
       {
         "question": "Pourquoi Base L2 ?",
-        "answer": "Base (L2 de Coinbase) offre des frais de transaction quasi nuls, une compatibilité EVM et une adoption institutionnelle croissante. C'est le choix le plus pratique pour un protocole environnemental à participation massive où des milliers de petites transactions de récompense ont lieu quotidiennement."
+        "answer": "Base offre des transactions à faible coût, la compatibilité EVM, de bons outils, le support des smart wallets et une large adoption développeur. C'est une couche de preuve pratique pour de nombreux petits événements environnementaux et récompenses."
       },
       {
         "question": "Quand est le lancement sur mainnet ?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Restez Informé",
-    "subtitle": "Recevez des notifications sur les événements testnet, la date TGE et les lancements Sub-DAO.",
+    "subtitle": "Recevez des mises à jour testnet, beta EcoScanner, pilotes partenaires et rapports de terrain.",
     "placeholder": "votre@email.fr",
     "cta": "Me Notifier",
     "disclaimer": "Pas de spam. Désinscription à tout moment.",

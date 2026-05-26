@@ -1,7 +1,7 @@
 # EcoDive & Shores — Whitepaper
 
-> **v1.0 — Public Release (Q2 2026)**
-> A Clean-to-Earn protocol for underwater cleanups, beach volunteering, and tokenized plastic credits.
+> **v1.1 — Public Draft (Q2 2026)**
+> A Clean-to-Earn protocol for verified underwater and coastal cleanups, reward points, and auditable plastic recovery credits.
 
 ---
 
@@ -9,14 +9,15 @@
 
 ## Abstract
 
-EcoDive & Shores is an open-source protocol that rewards individuals for physically removing plastic from the environment and converts verified cleanups into tradeable real-world-asset (RWA) credits purchased by corporations for ESG/CSRD compliance.
+EcoDive & Shores is an open-source protocol that rewards people for physically removing plastic from the environment and converts verified cleanups into auditable plastic recovery data for partners, communities, and corporate sustainability teams.
 
-The protocol uses a **dual-token architecture**:
+The protocol uses a **reward-and-proof architecture**:
 
-- **ECOD** — an ERC-20 governance and community token with a 3% DEX transaction tax split between treasury, liquidity, and developer operations.
-- **PLASTIC** — an ERC-20 RWA credit where 1 token equals 1 kilogram of plastic verified through a five-layer provenance system. Corporations burn PLASTIC to produce on-chain ESG offset certificates.
+- **EcoPoints** — an off-chain loyalty layer for mainstream users. EcoPoints are designed for marketplace rewards and partner redemptions without requiring a crypto wallet.
+- **ECOD** — an ERC-20 governance and community token for self-custody users and future Sub-DAO participation.
+- **PLASTIC** — a B2B-only plastic recovery credit where 1 token represents 1 kilogram of verified removed plastic. Corporate partners can burn PLASTIC to produce an on-chain impact certificate.
 
-Cleanups are verified through a composite system designed specifically for underwater environments, where traditional crowdsourcing cannot operate: Buddy-Dive dual-signature, Proof of Dive (dive computer API integration), C2PA photo provenance, YOLOv8 edge AI, and a GPT-4o compliance lens.
+Cleanups are verified through a composite system designed specifically for environments where traditional crowdsourcing is weak: GPS and timestamp checks, Buddy-Dive dual-signature, Proof of Dive integrations, C2PA photo provenance, edge computer vision, and cloud multimodal review.
 
 ## 1. Problem
 
@@ -25,17 +26,17 @@ Eight million metric tons of plastic enter the world's oceans every year. Tradit
 1. **None reach underwater waste.** Recreational and technical divers who could remove ghost nets, sunken tires, and microplastic concentrations have no economic incentive.
 2. **No standardized plastic credit market.** While carbon credits reached billions in RWA TVL, plastic credits remain fragmented and centralized.
 
-Simultaneously, the EU Corporate Sustainability Reporting Directive (CSRD, phased 2025–2028) requires over 50,000 companies to report measurable environmental impact — creating a multi-billion-euro demand for auditable, verifiable, on-chain ESG offsets.
+At the same time, EU sustainability reporting, green-claims rules, and consumer scrutiny are pushing companies toward evidence-backed environmental claims. EcoDive is designed around auditable evidence: who collected, where, when, how much, and how the claim was verified.
 
 ## 2. Solution Overview
 
 EcoDive is a decentralized protocol that:
 
-1. **Verifies cleanup events** through a five-layer system combining GPS, dive computer telemetry, buddy dual-signature, AI classification, and photo provenance.
-2. **Mints PLASTIC tokens** proportional to verified weight, scaled by a difficulty multiplier (beach x1 to ghost-net diving x10).
-3. **Sells PLASTIC credits** to corporations for ESG reporting via on-chain burn certificates.
-4. **Distributes ECOD rewards** to users from a community treasury.
-5. **Governs ecosystem decisions** through geographically scoped Sub-DAOs (Baltic, Mediterranean, Lakes PL).
+1. **Verifies cleanup events** through a layered system combining GPS, timestamps, photo provenance, computer vision, buddy review, and optional dive telemetry.
+2. **Rewards mainstream users** with EcoPoints for marketplace redemptions and partner benefits.
+3. **Supports self-custody users** through ECOD rewards and future governance participation.
+4. **Issues PLASTIC recovery credits** for verified kilograms removed, kept B2B-only and burned for auditable impact certificates.
+5. **Governs ecosystem decisions** through geographically scoped Sub-DAOs once the protocol reaches sufficient traction.
 
 ## 3. Tokenomics
 
@@ -50,20 +51,22 @@ EcoDive is a decentralized protocol that:
 | Allocation | % | Amount |
 |---|---|---|
 | DEX Liquidity | 40% | 40,000,000 |
-| Clean-to-Earn Treasury | 30% | 30,000,000 |
+| Clean-to-Earn Treasury / EcoPoints backing | 30% | 30,000,000 |
 | Presale | 15% | 15,000,000 |
 | Team (18-month vesting) | 10% | 10,000,000 |
 | Marketing & Airdrops | 5% | 5,000,000 |
 
 Tax is only applied on transfers to or from designated taxed pairs (DEX pools). Regular wallet-to-wallet transfers are untaxed. System wallets (treasury, liquidity, team) are excluded from tax to avoid double-taxation during setup.
 
+Future EcoPoints backing is expected to be funded from the treasury allocation or a dedicated custody pool. The exact mainnet structure will be finalized only after legal review and external smart-contract audit.
+
 ### 3.2 PLASTIC — RWA Credit Token
 
 - **Standard**: ERC-20 with burn-on-use semantics
 - **Minting**: restricted to `MINTER_ROLE` (verification oracle / treasury contract)
 - **Unit**: 1 token = 1 kilogram of verified plastic
-- **Burn certificate**: every burn emits an indexed `BurnCertificate` event with optional 256-byte metadata for ESG reporting
-- **Market**: initially sold over-the-counter to corporations; secondary DEX liquidity optional
+- **Burn certificate**: every burn emits an indexed `BurnCertificate` event with optional 256-byte metadata for auditable impact reporting
+- **Market**: B2B-only. PLASTIC is not intended for retail distribution.
 
 ### 3.3 Difficulty Multiplier
 
@@ -81,7 +84,7 @@ Reward multiplier reflects the true cost and risk of each cleanup type:
 ## 4. Verification Architecture
 
 ### Layer 1 — EcoScanner Mobile
-On-device YOLOv8 classifies 18 trash categories. GPS, accelerometer, and signed timestamps produce a cryptographic *Proof of Location*.
+On-device computer vision classifies trash categories. GPS, accelerometer, and signed timestamps produce a cryptographic *Proof of Location*. The exact edge model family will be selected through mobile benchmarks rather than hard-coded upfront.
 
 ### Layer 2 — Buddy-Dive
 Divers operate in pairs. Two verified accounts cross-sign each other's cleanup reports. Both receive rewards and accumulate a non-transferable *Trust Score* NFT. Sybil attacks require coordinated physical presence and on-chain history across two independent accounts.
@@ -93,7 +96,7 @@ Optional integration with Shearwater Cloud, Suunto App, and Garmin Descent FIT f
 For external cameras (GoPro, DSLR in housings), EcoDive validates Content Authenticity Initiative manifests that cryptographically bind photos to their capture device and edit history.
 
 ### Layer 5 — Compliance Lens
-Batch-mode GPT-4o Vision audits consistency between photo, reported weight, location, and category. File hashes are anchored on-chain as a *Root of Trust*.
+Batch-mode multimodal review audits consistency between photo, reported weight, location, and category. File hashes can be anchored on-chain as a *Root of Trust* while personal data remains off-chain.
 
 ### Beach Verification (lighter, high-volume mode)
 Beach cleanups operate in three modes: solo (daily cap), event (QR Event Code issued by organizer with group anti-cheat), and Land Buddy (pair signing). Lower reward threshold reflects lower economic incentive to cheat.
@@ -115,6 +118,7 @@ Holders of Legendary-tier photo NFTs and significant ECOD stakes vote on protoco
 ## 6. Anti-Sybil & Security
 
 - **Gitcoin Passport** is required for reward claims above threshold amounts.
+- **Tier 1 limits** cap daily cleanups, high-multiplier diving claims, and marketplace redemptions until trust is established.
 - **Merkle-based claim distribution** batches daily payouts into a single root, minimizing gas costs (~$0.02 per claim on Base).
 - **OpenZeppelin 5.x** standards inheritance, `ReentrancyGuard` on all external transfers, custom errors throughout for gas efficiency.
 - **Audit**: contracts will undergo a third-party security audit before mainnet launch.
@@ -125,19 +129,19 @@ Holders of Legendary-tier photo NFTs and significant ECOD stakes vote on protoco
 |---|---|
 | Smart contracts | Solidity 0.8.24 + Foundry + OpenZeppelin 5.x |
 | Chain | Base (L2) |
-| dApp | Next.js 15 + Viem + RainbowKit |
+| dApp | Next.js + Viem + RainbowKit |
 | Mobile | React Native + Expo |
-| Edge AI | YOLOv8 quantized (TFLite / CoreML) |
-| Cloud AI | OpenAI GPT-4o Vision Batch API |
+| Edge AI | Mobile computer vision model exported to TFLite / CoreML |
+| Cloud AI | Multimodal verification model router with batch processing |
 | Storage | IPFS (Pinata) + Arweave |
-| Anti-sybil | Gitcoin Passport |
+| Anti-sybil | Device limits, behavior rules, optional identity checks, Gitcoin Passport for Web3 users |
 
 ## 8. Roadmap
 
 - **Q2 2026** — Contracts on Base Sepolia testnet. Public landing page. Community seeding on Twitter / Farcaster.
-- **Q3 2026** — External security audit. Mainnet deployment. EcoScanner beta on Android. First beach event on the Polish Baltic coast. First hotel white-label LOI.
-- **Q4 2026** — Buddy-Dive verification live. Shearwater API integration. First corporate PLASTIC credit sale. Baltic Sub-DAO activation. Public pollution heatmap.
-- **Q1 2027+** — Mediterranean expansion. iOS EcoScanner. Authorial NFT collection (conditional on traction).
+- **Q3 2026** — Legal review. EcoPoints terms. EcoScanner Android beta. First beach event on the Polish Baltic coast. Marketplace partner pilots.
+- **Q4 2026** — External security audit. Mainnet readiness. Buddy-Dive verification. First B2B PLASTIC pilot. Public pollution heatmap.
+- **Q1 2027+** — Mainnet deployment after legal and audit clearance. Baltic Sub-DAO. Mediterranean expansion. iOS EcoScanner.
 
 ## 9. Open Source & Scope
 

@@ -37,7 +37,7 @@
     "plastic": {
       "name": "PLASTIC",
       "tagline": "Crédito de Activo del Mundo Real",
-      "description": "1 token = 1 kg de plástico verificado retirado. Acuñado tras verificación IA + buddy-dive. Quemado con certificado ESG para compensación corporativa.",
+      "description": "1 token = 1 kg de plástico verificado retirado. Crédito B2B-only quemado para generar un certificado de impacto auditable.",
       "ratio": "1 kg",
       "ratioLabel": "Por Token",
       "verify": "IA + GPS",
@@ -89,7 +89,7 @@
         "status": "upcoming",
         "items": [
           "App móvil EcoScanner (React Native + Expo)",
-          "Pipeline de verificación IA (YOLOv8 Edge + GPT-4o Vision)",
+          "Pipeline de verificación IA (visión edge + revisión multimodal)",
           "Backend publicador Merkle (Node.js + Fastify)",
           "API Proof of Dive (Shearwater/Suunto/Garmin)"
         ]
@@ -103,7 +103,7 @@
           "Despliegue en mainnet de Base (auditoría externa primero)",
           "Lanzamiento Sub-DAO: Báltico, Mediterráneo, Lagos PL",
           "Panel ESG B2B para clientes corporativos",
-          "Evento de Generación de Tokens (TGE)"
+          "Preparación legal, auditoría y mainnet"
         ]
       }
     ]
@@ -113,19 +113,19 @@
     "items": [
       {
         "question": "¿Qué es Clean-to-Earn?",
-        "answer": "Clean-to-Earn es nuestro modelo principal: los participantes que retiran plástico del océano o playas son recompensados con tokens ECOD. Los buceadores ganan 5–10x más que los voluntarios de playa debido a la mayor dificultad e impacto de la limpieza submarina."
+        "answer": "Clean-to-Earn es nuestro modelo principal: las personas que retiran plástico de playas, ríos o sitios submarinos reciben recompensas por trabajo verificado. Los usuarios mainstream empiezan con EcoPoints; los usuarios self-custody pueden usar la capa on-chain más adelante."
       },
       {
         "question": "¿Cómo se verifica la limpieza?",
-        "answer": "Cada limpieza pasa por verificación multicapa: prueba GPS + marca de tiempo, análisis fotográfico con IA (YOLOv8 + GPT-4o Vision) y firma dual Buddy-Dive (dos buceadores confirman mutuamente su limpieza). Esto hace prácticamente imposible manipular el sistema."
+        "answer": "Cada limpieza pasa por verificación por capas: GPS y hora, revisión de fotos, computer vision en el dispositivo, límites de comportamiento y Buddy-Dive para trabajos submarinos. El objetivo es un audit trail fuerte sin datos personales on-chain."
       },
       {
         "question": "¿Qué es el token PLASTIC?",
-        "answer": "PLASTIC es un token de crédito de Activo del Mundo Real (RWA). 1 PLASTIC = 1 kg de plástico verificado retirado, registrado en Base L2. Las empresas pueden comprar y quemar tokens PLASTIC para recibir un certificado ESG on-chain de compensación de plástico."
+        "answer": "PLASTIC es un crédito B2B-only de recuperación de plástico. 1 PLASTIC = 1 kg de plástico verificado retirado, registrado en Base L2. Los socios corporativos pueden quemar PLASTIC para obtener un certificado de impacto auditable; no está destinado al retail."
       },
       {
         "question": "¿Por qué Base L2?",
-        "answer": "Base (L2 de Coinbase) ofrece comisiones casi nulas, compatibilidad EVM y creciente adopción institucional. Es la opción más práctica para un protocolo ambiental de participación masiva donde ocurren miles de pequeñas transacciones de recompensa diariamente."
+        "answer": "Base ofrece transacciones de bajo coste, compatibilidad EVM, buen tooling, smart wallets y amplia adopción de desarrolladores. Es una capa práctica de prueba para muchos eventos ambientales y recompensas pequeñas."
       },
       {
         "question": "¿Cuándo es el lanzamiento en mainnet?",
@@ -139,7 +139,7 @@
   },
   "newsletter": {
     "title": "Mantente Informado",
-    "subtitle": "Recibe notificaciones sobre eventos testnet, fecha TGE y lanzamientos Sub-DAO.",
+    "subtitle": "Recibe actualizaciones de testnet, beta de EcoScanner, pilotos con socios e informes de campo.",
     "placeholder": "tu@email.com",
     "cta": "Notificarme",
     "disclaimer": "Sin spam. Cancela cuando quieras.",
