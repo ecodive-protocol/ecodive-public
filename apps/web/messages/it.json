@@ -189,7 +189,7 @@
       },
       "burn": {
         "title": "Burn aziendale",
-        "description": "Brucia crediti PLASTIC con certificato ESG on-chain per la rendicontazione CSRD. Solo B2B."
+        "description": "Brucia crediti PLASTIC con un certificato di impatto on-chain verificabile. Solo B2B."
       },
       "governance": {
         "title": "Governance",
